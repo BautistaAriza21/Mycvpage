@@ -1,0 +1,281 @@
+/* TABLET */
+@media screen and (min-width:768px) {
+    /* HEADER */
+    .description__nav {
+        padding: 0 2rem;
+    }
+
+  
+
+    /* MAIN */
+
+   .description-team {
+        padding: 0 2rem;
+    }
+
+    .description-freelance {
+        padding: 0 2rem;
+    }
+
+    .texto__proyectos {
+        padding: 0 2rem;
+    }
+
+    .title-team {
+        margin-bottom: 2rem;
+    }
+
+    .title-freelance {
+        margin-bottom: 2rem;
+    }
+
+    .skills__tablet {
+        animation: carrusel 15s 0s infinite linear;
+    }
+
+    @keyframes carrusel {
+        from {
+            transform: translateX(-100%);
+        }
+    
+        to {
+            transform: translateX(100%);
+        }
+    }
+
+    .cards__animation--tablet {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        margin: 0 auto;
+        margin-top: 20rem;
+    }
+
+
+    .info__proyectos--tablet {
+        position: absolute;
+        top: 80px;
+    }
+
+    .ver__proyectos {
+        width: 20%;
+    }
+
+   
+  
+}
+
+
+/* DESKTOP */
+@media screen and (min-width: 900px) {
+    /* HEADER */
+    .logoBA {
+        position: relative;
+    }
+
+    .name {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: -10px;
+        left: 80px;
+    }
+    
+    .name p {
+        color: var(--gris);
+        font-family: var(--font-barlow-titulo);
+        text-transform: uppercase;
+        font-size: 5rem;
+        font-weight: bold;
+        letter-spacing: 10px;
+    }
+
+    .surname {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 20px;
+        font-size: 5rem;
+        font-family: var(--font-barlow-titulo);
+        text-transform: uppercase;
+        color: var(--gris);
+        font-weight: bold;
+        letter-spacing: 10px;
+    }
+
+
+
+    
+    .menu-icon__nav {
+        background-image: var(--menu);
+        width: 60px;
+        height: 60px;
+        cursor: pointer;
+        margin-right: 10px;
+    }
+
+    .menu--click {
+        display: none;
+    }
+
+    .menu__buttons {
+        transform: translateY(0);
+        width: 100%;
+        box-shadow: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0; 
+        transition: none;
+        background: none;
+    }
+
+    .container__buttons {
+        display: flex;
+        flex-direction: row;
+        justify-content: end;
+        align-items: center;
+        gap: 30px;
+        margin-top: 2rem;
+        margin-right: 1rem;
+    }
+
+    .container__button1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .button__menu1 {
+        align-self: self-start;
+    }
+
+   .container__languajes {
+    padding: 0;
+   }
+
+
+
+    /* MAIN */
+    .skills__desktop {
+        animation: none;
+    }
+
+    .card__proyectos {
+        display: flex;
+        flex-wrap: wrap;
+        width: 50%;
+        justify-content: space-evenly;
+    }
+
+    .card-serenityspa {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-explorease {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-edupro-academy {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-analisis-clinicios {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .warning {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    /* MAIN */
+
+    .title-team {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .title-freelance {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: start;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .circle {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-color: var(--negro);
+    }
+
+    .container__team {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+  .work-team {
+    width: 90%;
+
+  }
+
+  .flex__team {
+    text-align: left;
+  }
+
+  .description-team {
+    padding: 0;
+  }
+
+  .team {
+    width: 50%;
+   height: 200px;
+  }
+
+
+    .card__proyectos {
+        width: 40%;
+        margin: 3rem auto;
+    }
+
+    .container__freelance {
+        display: flex;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .work-freelance {
+        text-align: left;
+        width: 90%;
+    }
+
+    .description-freelance {
+        padding: 0;
+    }
+
+    .freelance {
+        width: 60%;
+    }
+
+
+}
