@@ -634,8 +634,8 @@ body {
     width: 50%;
     margin: 1rem auto;
     border-radius: 10px;
-    transition: .5s;
-
+    transition: background-color .5s;
+    background-color: transparent;
 }
 
 .ver__proyectos:hover {
