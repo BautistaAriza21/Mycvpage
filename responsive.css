@@ -1,5 +1,19 @@
 /* TABLET */
 @media screen and (min-width:768px) {
+    /* CARRUSEL */
+    .carousel-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        margin-top: 20rem;
+        height: 750px;
+    }
+
+    .prev, .next {
+        top: 50%;
+    }
+
+
     /* HEADER */
     .description__nav {
         padding: 0 2rem;
@@ -47,12 +61,13 @@
         }
     }
 
+
     .cards__animation--tablet {
-        display: flex;
-        flex-wrap: wrap;
+        display: none;
+        /* flex-wrap: wrap;
         width: 60%;
         margin: 0 auto;
-        margin-top: 20rem;
+        margin-top: 20rem; */
     }
 
 
@@ -202,6 +217,11 @@
 }
 
 @media screen and (min-width: 1280px) {
+    .carousel-container {
+        display: none;
+    }
+
+
     /* MAIN */
 
     .title-team {
@@ -280,5 +300,13 @@
 
    .ver__proyectos {
     width: 20%;
+   }
+
+   .cards__container {
+    display: flex;
+    justify-content: space-evenly;
+    gap: 40px;
+    width: 90%;
+    margin: 22rem auto 0 auto;
    }
 }
