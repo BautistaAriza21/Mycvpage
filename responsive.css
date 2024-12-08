@@ -237,7 +237,7 @@
     }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 900px) {
     .carousel-container {
         display: none;
     }
@@ -326,6 +326,7 @@
    .cards__container {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     gap: 40px;
     width: 90%;
     margin: 22rem auto 0 auto;
