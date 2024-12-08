@@ -324,7 +324,7 @@ body {
     transition: clip-path .5s;
 }
 
-.cv:hover .line__menu6 {
+.link-cv:hover .line__menu6 {
     clip-path: circle(100% at 50% 50%);
 }
 
