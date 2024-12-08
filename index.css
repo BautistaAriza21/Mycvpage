@@ -24,6 +24,7 @@ body {
     --laptop3: url(/IMG/laptop3.webp);
     --analisis-clinicos: url(/IMG/figma.webp);
     --contact: url(/IMG/contact-me1.webp);
+    --mentordigital: url(/IMG/mentordigital.webp);
 
     /* SKILLS */
     --html: url(/SKILLS/bxl-html5.svg.svg);
@@ -739,10 +740,19 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+}
+
+.card__buttons:hover .serenity-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .card__buttons {
     position: relative;
+    transform: scale(1);
+    filter: brightness(100%);
+    transition: transform .5s, filter .5s;
 }
 
 .link__buttons {
@@ -756,17 +766,18 @@ body {
     justify-content: center;
     align-items: center;
     opacity: 0;
+    transition: opacity .5s;
+
+
 }
 
 .card__buttons:hover  .link__buttons {
     opacity: 1;
-    transition: opacity .5s;
 }
 
 
 .card__buttons:hover .serenity-img {
     transform: scale(1.1);
-    transition: transform .5s, filter .5s;
     filter: brightness(50%);
 }
 
@@ -827,11 +838,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.card__buttons:hover .explore-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
-}
+
 
 .explore-img {
     background-image: var(--laptop2);
@@ -841,6 +848,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+}
+
+.card__buttons:hover .explore-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .card-edupro-academy {
@@ -848,12 +861,6 @@ body {
     border-radius: 10px;
     overflow: hidden;
     box-shadow: var(--card-shadow);
-}
-
-.card__buttons:hover .edupro-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
 }
 
 .edupro-img {
@@ -864,7 +871,16 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
 }
+
+
+.card__buttons:hover .edupro-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+
 
 .card-analisis-clinicios {
     border: 2px solid var(--negro);
@@ -873,11 +889,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.card__buttons:hover .analisis-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
-}
+
 
 .analisis-img {
     background-image: var(--analisis-clinicos);
@@ -887,6 +899,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+
+}
+
+.card__buttons:hover .analisis-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .warning {
@@ -909,6 +928,32 @@ body {
 .card__buttons:hover .warning {
     opacity: 0;
 }
+
+.mentordigital {
+    background-image: var(--mentordigital);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 250px;
+    transition: transform .5s, filter .5s;
+
+}
+
+.card__buttons:hover .mentordigital {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+
+.card-mentordigital {
+    border: 2px solid var(--negro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+
 /* FOOTER */
 .background__footer {
     background-color: var(--negro);
