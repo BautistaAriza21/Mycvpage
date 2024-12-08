@@ -309,13 +309,11 @@ body {
 }
 
 
-
-.cv {
+.link-cv {
     text-decoration: none;
+    color: var(--gris);
     font-family: var(--font-lato-texto);
     font-size: var(--tamaño-texto);
-    color: var(--gris);
-    
 }
 
 .line__menu6 {
