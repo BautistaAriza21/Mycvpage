@@ -24,6 +24,7 @@ body {
     --laptop3: url(/IMG/laptop3.webp);
     --analisis-clinicos: url(/IMG/figma.webp);
     --contact: url(/IMG/contact-me1.webp);
+    --mentordigital: url(/IMG/mentordigital.webp);
 
     /* SKILLS */
     --html: url(/SKILLS/bxl-html5.svg.svg);
@@ -675,6 +676,12 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+}
+
+.card__buttons:hover .serenity-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .card__buttons {
@@ -700,11 +707,7 @@ body {
 }
 
 
-.card__buttons:hover .serenity-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
-}
+
 
 
 .linkweb , .figmalink {
@@ -796,11 +799,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.card__buttons:hover .explore-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
-}
+
 
 .explore-img {
     background-image: var(--laptop2);
@@ -810,6 +809,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+
+}
+
+.card__buttons:hover .explore-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .card-edupro-academy {
@@ -819,11 +825,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.card__buttons:hover .edupro-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
-}
+
 
 .edupro-img {
     background-image: var(--laptop3);
@@ -833,6 +835,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+}
+
+
+.card__buttons:hover .edupro-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .card-analisis-clinicios {
@@ -842,11 +851,7 @@ body {
     box-shadow: var(--card-shadow);
 }
 
-.card__buttons:hover .analisis-img {
-    transform: scale(1.1);
-    transition: transform .5s, filter .5s;
-    filter: brightness(50%);
-}
+
 
 .analisis-img {
     background-image: var(--analisis-clinicos);
@@ -856,6 +861,13 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
+    transition: transform .5s, filter .5s;
+
+}
+
+.card__buttons:hover .analisis-img {
+    transform: scale(1.1);
+    filter: brightness(50%);
 }
 
 .warning {
@@ -872,7 +884,7 @@ body {
     font-family: var(--font-lato-texto);
     font-size: var(--tamaño-texto);
     opacity: 1;
-    transition: opacity .5s;
+    transition: opacity .3s;
 }
 
 .card__buttons:hover .warning {
@@ -911,6 +923,30 @@ body {
     height: 50px;
 }
 
+
+.mentordigital {
+    background-image: var(--mentordigital);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    transition: transform .5s, filter .5s;
+}
+
+
+.card__buttons:hover .mentordigital {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+
+.card-mentordigital {
+    border: 2px solid var(--negro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
 
 /* FOOTER */
 .background__footer {
