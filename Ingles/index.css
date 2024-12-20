@@ -25,6 +25,8 @@ body {
     --analisis-clinicos: url(/IMG/figma.webp);
     --contact: url(/IMG/contact-me1.webp);
     --mentordigital: url(/IMG/mentordigital.webp);
+    --checkpointzone: url(/IMG/checkpointzone.webp);
+    --goodness-snacks: url(/IMG/laptop-goodness.webp);
 
     /* SKILLS */
     --html: url(/SKILLS/bxl-html5.svg.svg);
@@ -800,6 +802,20 @@ body {
 }
 
 
+.titulo__explore {
+    font-family: var(--font-barlow-titulo);
+    font-size: var(--tamaño-titulo);
+    color: var(--negro);
+}
+
+.slogan__explore, .text__explore {
+    font-family: var(--font-lato-texto);
+    font-size: var(--tamaño-texto);
+    color: var(--negro);
+    margin-top: 1rem;
+}
+
+
 
 .explore-img {
     background-image: var(--laptop2);
@@ -825,6 +841,19 @@ body {
     box-shadow: var(--card-shadow);
 }
 
+
+.titulo__academy {
+    font-family: var(--font-barlow-titulo);
+    font-size: var(--tamaño-titulo);
+    color: var(--negro);
+}
+
+.slogan__academy, .text__academy {
+    font-family: var(--font-lato-texto);
+    font-size: var(--tamaño-texto);
+    color: var(--negro);
+    margin-top: 1rem;
+}
 
 
 .edupro-img {
@@ -864,6 +893,23 @@ body {
     transition: transform .5s, filter .5s;
 
 }
+
+
+.titulo__analisis {
+    font-family: var(--font-barlow-titulo);
+    font-size: var(--tamaño-titulo);
+    color: var(--negro);
+}
+
+
+.slogan__analisis, .text__analisis {
+    font-family: var(--font-lato-texto);
+    font-size: var(--tamaño-texto);
+    color: var(--negro);
+    margin-top: 1rem;
+}
+
+
 
 .card__buttons:hover .analisis-img {
     transform: scale(1.1);
@@ -923,6 +969,29 @@ body {
     height: 50px;
 }
 
+.card-mentordigital {
+    border: 2px solid var(--negro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+
+.titulo__mentor {
+    font-family: var(--font-barlow-titulo);
+    font-size: var(--tamaño-titulo);
+    color: var(--negro);
+}
+
+
+.slogan__mentor, .text__mentor {
+    font-family: var(--font-lato-texto);
+    font-size: var(--tamaño-texto);
+    color: var(--negro);
+    margin-top: 1rem;
+}
+
+
 
 .mentordigital {
     background-image: var(--mentordigital);
@@ -947,6 +1016,79 @@ body {
     overflow: hidden;
     box-shadow: var(--card-shadow);
 }
+
+
+.checkpointzone {
+    background-image: var(--checkpointzone);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    transition: transform .5s, filter .5s;
+}
+
+.card-checkpointzone {
+    border: 2px solid var(--negro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.card__buttons:hover .checkpointzone {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.titulo__checkpoint {
+    font-family: var(--font-barlow-titulo);
+    font-size: var(--tamaño-titulo);
+    color: var(--negro);
+}
+
+.slogan__checkpoint, .text__checkpoint {
+    font-family: var(--font-lato-texto);
+    font-size: var(--tamaño-texto);
+    color: var(--negro);
+    margin-top: 1rem;
+}
+
+.card-goodness-snacks {
+    border: 2px solid var(--negro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.goodness-snacks {
+    background-image: var(--goodness-snacks);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;    
+    transition: transform .5s, filter .5s;
+}
+
+.card__buttons:hover .goodness-snacks {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
+
+.titulo__goodness {
+    font-family: var(--font-barlow-titulo);
+    font-size: var(--tamaño-titulo);
+    color: var(--negro);
+}
+
+.slogan__goodness, .text__goodness {
+    font-family: var(--font-lato-texto);
+    font-size: var(--tamaño-texto);
+    color: var(--negro);
+    margin-top: 1rem;
+}
+
+
 
 /* FOOTER */
 .background__footer {
