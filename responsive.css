@@ -1,3 +1,4 @@
+/* PHONE */
 @media screen and (min-width: 320px) {
     /* CARRUSEL */
     .carousel-container {
@@ -17,6 +18,13 @@
     } 
     
 }
+
+/* @media screen and (min-width:430px) {
+    .carousel-container {
+        height: 500px;
+    }
+} */
+
 
 
 /* TABLET */
@@ -204,8 +212,8 @@
     .card__proyectos {
         display: flex;
         flex-wrap: wrap;
-        width: 50%;
-        justify-content: space-evenly;
+        width: 40%;
+        margin:  2rem auto;
     }
 
     .card-serenityspa {
@@ -227,6 +235,18 @@
     }
 
     .card-analisis-clinicios {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-mentordigital {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-checkpointzone {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
@@ -294,10 +314,10 @@
   }
 
 
-    .card__proyectos {
+    /* .card__proyectos {
         width: 40%;
         margin: 3rem auto;
-    }
+    } */
 
     .container__freelance {
         display: flex;
@@ -327,7 +347,6 @@
     display: flex;
     justify-content: space-evenly;
     flex-wrap: wrap;
-    gap: 40px;
     width: 90%;
     margin: 22rem auto 0 auto;
    }
