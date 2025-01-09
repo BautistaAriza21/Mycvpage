@@ -329,5 +329,22 @@
         width: 60%;
     }
 
+    .card-mentordigital {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-checkpointzone {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-goodness-snacks {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 
 }
