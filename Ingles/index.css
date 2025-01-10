@@ -31,6 +31,7 @@ body {
     --mentordigital: url(/IMG/mentordigital.webp);
     --checkpointzone: url(/IMG/checkpointzone.webp);
     --goodness-snacks: url(/IMG/laptop-goodness.webp);
+    --glowcare: url(/IMG/glowcare-desktop.webp);
 
     /* SKILLS */
     --html: url(/SKILLS/bxl-html5.svg.svg);
@@ -943,7 +944,6 @@ body {
 
 .container__herramientas {
     display: flex;
-    justify-content: flex-start;
     flex-wrap: wrap;
     align-items: center;
     margin-top: 1rem;
@@ -955,6 +955,11 @@ body {
     font-size: var(--tamaño-texto);
     color: var(--negro);
     font-weight: bold;
+}
+
+.herramientas {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -971,6 +976,21 @@ body {
 .figma-icon1 {
     width: 50px;
     height: 50px;
+}
+
+#tailwind-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.js-icon {
+    width: 50px;
+    height: 50px;
+    transition: fill .5s;
+}
+
+.js-icon:hover {
+    fill: rgb(167, 167, 0);
 }
 
 .card-mentordigital {
@@ -1093,6 +1113,27 @@ body {
 }
 
 
+.card-glowcare {
+    border: 2px solid var(--negro);
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: var(--card-shadow);
+}
+
+.glowcare {
+    background-image: var(--glowcare);
+    width: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    transition: transform .5s, filter .5s;
+}
+
+.card__buttons:hover .glowcare {
+    transform: scale(1.1);
+    filter: brightness(50%);
+}
 
 /* FOOTER */
 .background__footer {
