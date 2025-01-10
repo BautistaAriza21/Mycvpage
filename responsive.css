@@ -350,4 +350,16 @@
     width: 90%;
     margin: 22rem auto 0 auto;
    }
+
+   .card-goodness-snacks {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+   }
+
+   .card-glowcare {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+   }
 }
