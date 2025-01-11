@@ -195,6 +195,10 @@ body {
 }
 
 /* MAIN */
+.html:hover {
+    fill: rgb(241, 81, 23);
+}
+
 .container__main {
     width: 90%;
     margin: 0 auto;
@@ -332,7 +336,7 @@ body {
     position: absolute;
     top: 40px;
     left: 89px;
-    background-image: linear-gradient(to bottom, #0D0C0C 66%, #C1C2CA 76%);
+    background-image: linear-gradient(to bottom, #0D0C0C 78%, #C1C2CA 88%);
 }
 
 .html__container {
