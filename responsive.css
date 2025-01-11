@@ -114,6 +114,10 @@
 /* DESKTOP */
 @media screen and (min-width: 900px) {
     /* HEADER */
+    .description__nav {
+        width: 900px;
+    }
+
     .logoBA {
         position: relative;
     }
