@@ -274,3 +274,9 @@
         width: 60%;
     }
 }
+
+@media screen and (min-width: 1366px) {
+    .line__progress {
+        left: 550px;
+    }    
+}
