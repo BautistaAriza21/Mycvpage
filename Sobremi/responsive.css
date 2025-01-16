@@ -291,6 +291,13 @@
 } */
 
 
+@media screen and (min-width: 1366px) {
+    .line__progress {
+        left: 552px;
+    }
+}
+
+
 @media screen and (min-width:1440px)  {
     .content__img1 {
         animation: slide1 8s .5s linear infinite both ;
