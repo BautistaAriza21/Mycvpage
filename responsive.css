@@ -99,9 +99,13 @@
         margin-top: 20rem; */
     }
 
+   
+
 
     .info__proyectos--tablet {
         position: absolute;
+        left: 0;
+        right: 0;
         top: 80px;
     }
 
@@ -209,6 +213,12 @@
 
 
     /* MAIN */
+    .texto__proyectos {
+        width: 800px;
+        margin: 0 auto;
+    }
+
+
     .skills__desktop {
         animation: none;
     }
