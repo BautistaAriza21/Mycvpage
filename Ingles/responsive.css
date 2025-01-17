@@ -87,6 +87,8 @@
     .info__proyectos--tablet {
         position: absolute;
         top: 80px;
+        left: 0;
+        right: 0;
     }
 
     .ver__proyectos {
@@ -192,6 +194,11 @@
 
 
     /* MAIN */
+   .texto__proyectos {
+    width: 800px;
+    margin: 0 auto;
+   }
+
     .skills__desktop {
         animation: none;
     }
