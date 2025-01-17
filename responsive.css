@@ -185,6 +185,7 @@
         bottom: 0; 
         transition: none;
         background: none;
+        opacity: 1;
     }
 
     .container__buttons {
