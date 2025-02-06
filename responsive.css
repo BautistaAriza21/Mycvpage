@@ -1,5 +1,6 @@
 /* PHONE */
 @media screen and (min-width: 320px) {
+
     /* CARRUSEL */
     .carousel-container {
         width: 100%;
@@ -8,15 +9,22 @@
 }
 
 @media screen and (min-width: 360px) {
+
     /* CARRUSEL */
     .carousel-container {
         height: 1100px;
     }
 
-    .prev, .next {
+    /* 
+    .title__section {
+        animation-range: entry 45vh cover 80vh;
+    } */
+
+    .prev,
+    .next {
         top: 40%;
-    } 
-    
+    }
+
 }
 
 /* @media screen and (min-width:430px) {
@@ -29,6 +37,7 @@
 
 /* TABLET */
 @media screen and (min-width:768px) {
+
     /* CARRUSEL */
     .carousel-container {
         width: 100%;
@@ -38,7 +47,8 @@
         height: 750px;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         top: 50%;
     }
 
@@ -48,11 +58,11 @@
         padding: 0 2rem;
     }
 
-  
+
 
     /* MAIN */
 
-   .description-team {
+    .description-team {
         padding: 0 2rem;
     }
 
@@ -62,6 +72,71 @@
 
     .texto__proyectos {
         padding: 0 2rem;
+    }
+
+    .title__section {
+        animation-range: entry 50vh cover 80vh;
+    }
+
+    @keyframes titulo-seccion {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .container__team {
+        animation-range: entry 60vh cover 80vh;
+    }
+
+    @keyframes work-team {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+    }
+
+    .container__freelance {
+        animation-range: entry 30vh cover 80vh;
+    }
+
+    @keyframes work-freelance {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .info__proyectos {
+        animation-range: entry 20vh cover 80vh;
+    }
+
+    @keyframes proyectos {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
     }
 
     .title-team {
@@ -84,7 +159,7 @@
         from {
             transform: translateX(-100%);
         }
-    
+
         to {
             transform: translateX(100%);
         }
@@ -99,7 +174,7 @@
         margin-top: 20rem; */
     }
 
-   
+
 
 
     .info__proyectos--tablet {
@@ -110,13 +185,16 @@
     }
 
 
-   
-  
+
+
 }
+
+
 
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+
     /* HEADER */
     .description__nav {
         width: 900px;
@@ -134,7 +212,7 @@
         top: -10px;
         left: 80px;
     }
-    
+
     .name p {
         color: var(--gris);
         font-family: var(--font-barlow-titulo);
@@ -161,7 +239,7 @@
 
 
 
-    
+
     .menu-icon__nav {
         background-image: var(--menu);
         width: 60px;
@@ -182,7 +260,6 @@
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0; 
         transition: none;
         background: none;
         opacity: 1;
@@ -207,9 +284,9 @@
         align-self: self-start;
     }
 
-   .container__languajes {
-    padding: 0;
-   }
+    .container__languajes {
+        padding: 0;
+    }
 
 
 
@@ -228,7 +305,7 @@
         display: flex;
         flex-wrap: wrap;
         width: 40%;
-        margin:  2rem auto;
+        margin: 2rem auto;
     }
 
     .card-serenityspa {
@@ -288,6 +365,10 @@
         gap: 10px;
     }
 
+    .title__section {
+        animation-range: entry 50vh cover 100vh;
+    }
+
     .title-freelance {
         display: flex;
         flex-direction: row-reverse;
@@ -308,25 +389,76 @@
         align-items: center;
         width: 90%;
         margin: 0 auto;
+        animation-range: entry 50vh cover 100vh;
     }
 
-  .work-team {
-    width: 90%;
+    @keyframes work-team {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
 
-  }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
 
-  .flex__team {
-    text-align: left;
-  }
 
-  .description-team {
-    padding: 0;
-  }
+    .container__freelance {
+        animation-range: entry 40vh cover 100vh;
+    }
 
-  .team {
-    width: 50%;
-   height: 200px;
-  }
+    @keyframes freelance {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+
+    .container__skills {
+        animation-range: entry 20vh cover 100vh;
+    }
+
+    @keyframes habilidades {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
+
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .work-team {
+        width: 90%;
+
+    }
+
+    .flex__team {
+        text-align: left;
+    }
+
+    .description-team {
+        padding: 0;
+    }
+
+    .team {
+        width: 50%;
+        height: 200px;
+    }
+
+    .info__proyectos {
+        animation-range: entry 20vh cover 80vh;
+    }
 
 
     /* .card__proyectos {
@@ -354,28 +486,42 @@
         width: 60%;
     }
 
-   .ver__proyectos {
-    width: 20%;
-   }
+    .ver__proyectos {
+        width: 20%;
+    }
 
-   .cards__container {
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 22rem auto 0 auto;
-   }
+    .cards__container {
+        display: flex;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 22rem auto 0 auto;
+        animation: cards-desktop auto both;
+        animation-timeline: view();
+        animation-range: entry 20vh cover 80vh;
+    }
 
-   .card-goodness-snacks {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-   }
+    @keyframes cards-desktop {
+        0% {
+            opacity: 0;
+            transform: translateY(10%);
+        }
 
-   .card-glowcare {
-    width: 100%;
-    max-width: 400px;
-    margin: 0 auto;
-   }
+        100% {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .card-goodness-snacks {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-glowcare {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
 }
-
