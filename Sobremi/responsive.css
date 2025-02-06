@@ -1,7 +1,7 @@
 :root {
-     /* COLORES */
-     --negro: #0D0C0C;
-     --gris: #C1C2CA;
+    /* COLORES */
+    --negro: #0D0C0C;
+    --gris: #C1C2CA;
 }
 
 /* MOBILE */
@@ -22,7 +22,7 @@
         left: 107px;
     }
 
-  
+
 }
 
 @media screen and (min-width: 375px) {
@@ -54,6 +54,38 @@
 /* TABLETAS */
 
 @media screen and (min-width: 768px) {
+    .title__description {
+        animation-range: entry 25vh cover 80vh;
+    }
+
+    .texto__description {
+        animation-range: entry 35vh cover 80vh;
+    }
+
+    .started__flex {
+        animation-range: entry 10vh cover 80vh;
+    }
+
+    .path__scroll {
+        animation-range: entry 10vh cover 60vh;
+    }
+
+    .progress__path {
+        animation-range: entry 10vh cover 60vh;
+    }
+
+    .flex__fortalezas {
+        animation-range: entry 10vh cover 60vh;
+    }
+
+    .flex__aprendiendo {
+        animation-range: entry 10vh cover 60vh;
+    }
+
+    .container__visitar {
+        animation-range: entry 10vh cover 60vh;
+    }
+
     .center {
         width: 70%;
     }
@@ -67,12 +99,12 @@
         font-family: var(--font-lato-texto);
         font-size: var(--tamaño-texto);
         font-weight: bold;
-    } 
+    }
 
-    .html__container  {
+    .html__container {
         margin-left: 3.5rem;
     }
-    
+
     .css__container {
         margin-left: 2.2rem;
     }
@@ -108,7 +140,7 @@
     .illustrator__container {
         margin-left: 5.9rem;
     }
-    
+
     .content__description {
         height: 400px;
     }
@@ -124,10 +156,11 @@
     .text__aprendiendo {
         padding: 0 2rem;
     }
+
 }
 
 @media screen and (min-width: 800px) {
-   
+
 
     .line__progress {
         left: 304px;
@@ -154,7 +187,154 @@
 
 /* LAPTOP */
 
+@media screen and (min-width: 900px) {
+    .title__description {
+        animation: titulo 1s linear;
+    }
+
+    @keyframes titulo {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .texto__description {
+        animation: texto 1s linear;
+    }
+
+    @keyframes texto {
+        from {
+            transform: translateX(-100%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .started__flex {
+        animation-range: entry 20vh cover 80vh;
+    }
+
+    @keyframes start {
+        from {
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .svg__started {
+        animation: svg auto both;
+        animation-timeline: view();
+        animation-range: entry 20vh cover 80vh;
+    }
+
+    @keyframes svg {
+        from {
+            transform: translateX(10%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .flex__fortalezas {
+        animation-range: entry 10vh cover 60vh;
+    }
+
+    @keyframes fortalezas {
+        from {
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .svg3 {
+        animation: svg3 auto both;
+        animation-timeline: view();
+        animation-range: entry 10vh cover 60vh;
+        height: 300px;
+    }
+
+    @keyframes svg3 {
+        from {
+            transform: translateX(10%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+
+
+    }
+
+    .flex__aprendiendo {
+        animation-range: entry 10vh cover 60vh;
+        overflow: hidden;
+    }
+
+
+    @keyframes aprendiendo {
+        from {
+            transform: translateX(-10%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+
+    .svg4 {
+        animation: svg4 auto both;
+        animation-timeline: view();
+        animation-range: entry 10vh cover 60vh;
+        height: 300px;
+    }
+
+    @keyframes svg4 {
+        from {
+            transform: translateX(10%);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateX(0);
+            opacity: 1;
+        }
+    }
+}
+
+.text__visit {
+    margin: 2rem auto;
+}
+
 @media screen and (min-width: 1280px) {
+
     /* HEADER */
     .my-description {
         display: flex;
@@ -172,11 +352,13 @@
         justify-content: center;
     }
 
+
+
     .texto__description {
         padding: 0;
     }
 
-    .container-img::before  {
+    .container-img::before {
         filter: none;
         background: none;
     }
@@ -241,48 +423,48 @@
         width: 40%;
     }
 
-   .flex__fortalezas {
-    text-align: left;
-   }
+    .flex__fortalezas {
+        text-align: left;
+    }
 
-   .item__fortalezas {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-   }
+    .item__fortalezas {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
 
-   .circle {
-    width: 30px;
-    height: 30px;
-    background-color: var(--gris);
-    border-radius: 50%;
-   }
+    .circle {
+        width: 30px;
+        height: 30px;
+        background-color: var(--gris);
+        border-radius: 50%;
+    }
 
-   .container__aprendiendo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-    width: 90%;
-    margin: 3rem auto;
-   }
+    .container__aprendiendo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1.5rem;
+        width: 90%;
+        margin: 3rem auto;
+    }
 
-   .flex__aprendiendo {
-    text-align: left;
-    width: 80%;
-   }
+    .flex__aprendiendo {
+        text-align: left;
+        width: 80%;
+    }
 
-   .text__aprendiendo{ 
-    padding: 0;
-   }
+    .text__aprendiendo {
+        padding: 0;
+    }
 
-   .svg4 {
-    width: 50%;
-   }
+    .svg4 {
+        width: 50%;
+    }
 
-   .btn__home {
-    width: 15%;
-   }
+    .btn__home {
+        width: 15%;
+    }
 }
 
 /* .svg1, .svg2 {
@@ -298,9 +480,9 @@
 }
 
 
-@media screen and (min-width:1440px)  {
+@media screen and (min-width:1440px) {
     .content__img1 {
-        animation: slide1 8s .5s linear infinite both ;
+        animation: slide1 8s .5s linear infinite both;
 
     }
 
@@ -308,11 +490,11 @@
         from {
             transform: translateY(-100%);
         }
-    
+
         to {
             transform: translateY(150%);
         }
-    } 
+    }
 
     .content__img2 {
         animation: slide2 8s 1s linear infinite both;
@@ -322,7 +504,7 @@
         from {
             transform: translateY(150%);
         }
-    
+
         to {
             transform: translateY(-100%);
         }
@@ -336,13 +518,14 @@
         from {
             transform: translateY(-100%);
         }
+
         to {
             transform: translateY(150%);
         }
     }
-    
+
     .line__progress {
-        left: 592px;
+        left: 783px;
     }
 }
 
