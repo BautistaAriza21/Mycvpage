@@ -52,12 +52,14 @@ body {
 }
 
 .container-img {
-  columns: 3;
-  background-color: var(--negro);
-  display: block;
-  overflow: hidden;
-  position: relative;
+    columns: 3;
+    background-color: var(--negro);
+    display: block;
+    overflow: hidden;
+    position: relative;
 }
+
+
 
 .container-img::before {
     content: "";
@@ -81,7 +83,7 @@ body {
 .content__img1 {
     display: grid;
     gap: 20px;
-    animation: slide1 8s .5s linear infinite both ;
+    animation: slide1 8s .5s linear infinite both;
 }
 
 @keyframes slide1 {
@@ -92,14 +94,14 @@ body {
     to {
         transform: translateY(100%);
     }
-} 
-    
+}
+
 
 
 .content__img2 {
     display: grid;
     gap: 20px;
-    animation: slide2 8s 1s linear infinite both ;
+    animation: slide2 8s 1s linear infinite both;
 }
 
 @keyframes slide2 {
@@ -115,13 +117,14 @@ body {
 .content__img3 {
     display: grid;
     gap: 20px;
-    animation: slide3 8s 1.5s linear infinite both ;
+    animation: slide3 8s 1.5s linear infinite both;
 }
 
 @keyframes slide3 {
     from {
         transform: translateY(-100%);
     }
+
     to {
         transform: translateY(100%);
     }
@@ -160,10 +163,11 @@ body {
 
 .content__description {
     text-align: center;
-    padding: 1rem ;
+    padding: 1rem;
     background-color: var(--negro);
     height: 550px;
     color: var(--gris);
+
 }
 
 
@@ -175,13 +179,43 @@ body {
     font-size: var(--tamaño-titulo);
     margin-bottom: 1rem;
     font-weight: bold;
+    animation: titulo auto both;
+    animation-timeline: view();
+    animation-range: entry 30vh cover 80vh;
+}
+
+@keyframes titulo {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .texto__description {
     font-family: var(--font-lato-texto);
-     font-size: var(--tamaño-texto);
-     padding: 0 1rem;
- }
+    font-size: var(--tamaño-texto);
+    padding: 0 1rem;
+    animation: texto auto both;
+    animation-timeline: view();
+    animation-range: entry 20vh cover 80vh;
+}
+
+@keyframes texto {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .waves {
     background-image: var(--wave);
@@ -202,6 +236,24 @@ body {
 .container__main {
     width: 90%;
     margin: 0 auto;
+}
+
+.started__flex {
+    animation: start auto both;
+    animation-timeline: view();
+    animation-range: entry 10vh cover 60vh;
+}
+
+@keyframes start {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .how-i-started {
@@ -261,10 +313,42 @@ body {
     background-repeat: no-repeat;
 }
 
+.path__scroll {
+    animation: path auto both;
+    animation-timeline: view();
+    animation-range: entry 10vh cover 50vh;
+}
+
+@keyframes path {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 
 .path__learning {
     text-align: center;
     margin-top: 5rem;
+    animation: path auto both;
+    animation-timeline: view();
+    animation-range: entry 20vh cover 80vh;
+}
+
+@keyframes path {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .title__learning {
@@ -273,6 +357,8 @@ body {
     text-transform: uppercase;
     text-decoration: underline;
 }
+
+
 
 .container__learning {
     margin-top: 1rem;
@@ -328,6 +414,21 @@ body {
     position: relative;
     height: 1500px;
     margin-top: 2rem;
+    animation: progress auto both;
+    animation-timeline: view();
+    animation-range: entry 20vh cover 80vh;
+}
+
+@keyframes progress {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .line__progress {
@@ -408,7 +509,16 @@ body {
     color: var(--gris);
 }
 
-.html__container, .css__container, .tailwind__container, .bootstrap__container, .figma__container, .javascript__container, .react__container, .github__container, .photoshop__container, .illustrator__container {
+.html__container,
+.css__container,
+.tailwind__container,
+.bootstrap__container,
+.figma__container,
+.javascript__container,
+.react__container,
+.github__container,
+.photoshop__container,
+.illustrator__container {
     margin-bottom: 4rem;
 }
 
@@ -423,7 +533,25 @@ body {
 .container__fortalezas {
     text-align: center;
     color: var(--gris);
-    margin-bottom: 3rem;
+    margin-bottom: 6rem;
+}
+
+.flex__fortalezas {
+    animation: fortalezas auto both;
+    animation-timeline: view();
+    animation-range: entry 10vh cover 80vh;
+}
+
+@keyframes fortalezas {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .title__fortalezas {
@@ -460,6 +588,24 @@ body {
     margin-bottom: 3rem;
 }
 
+.flex__aprendiendo {
+    animation: aprendiendo auto both;
+    animation-timeline: view();
+    animation-range: entry 20vh cover 80vh;
+}
+
+@keyframes aprendiendo {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
 .title__aprendiendo {
     font-family: var(--font-barlow-titulo);
     font-size: var(--tamaño-titulo);
@@ -487,6 +633,21 @@ body {
     text-align: center;
     color: var(--gris);
     margin-top: 2rem;
+    animation: visitar auto both;
+    animation-timeline: view();
+    animation-range: entry 10vh cover 80vh;
+}
+
+@keyframes visitar {
+    from {
+        transform: translateY(10%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .title__visitar {
@@ -499,7 +660,7 @@ body {
 .text__visitar {
     font-family: var(--font-lato-texto);
     font-size: var(--tamaño-texto);
-    margin-top: 2rem;
+    margin: 2rem 0;
     padding: 0 2rem;
 }
 
