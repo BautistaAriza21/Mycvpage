@@ -1,15 +1,16 @@
 /* TABLET */
 @media screen and (min-width:768px) {
+
     /* HEADER */
     .description__nav {
         padding: 0 2rem;
     }
 
-  
+
 
     /* MAIN */
 
-   .description-team {
+    .description-team {
         padding: 0 2rem;
     }
 
@@ -37,7 +38,7 @@
         from {
             transform: translateX(-100%);
         }
-    
+
         to {
             transform: translateX(100%);
         }
@@ -58,13 +59,14 @@
     }
 
 
-   
-  
+
+
 }
 
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+
     /* HEADER */
     .logoBA {
         position: relative;
@@ -78,7 +80,7 @@
         top: -10px;
         left: 80px;
     }
-    
+
     .name p {
         color: var(--gris);
         font-family: var(--font-barlow-titulo);
@@ -105,7 +107,7 @@
 
 
 
-    
+
     .menu-icon__nav {
         background-image: var(--menu);
         width: 60px;
@@ -126,7 +128,7 @@
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0; 
+        bottom: 0;
         transition: none;
         background: none;
     }
@@ -150,9 +152,9 @@
         align-self: self-start;
     }
 
-   .container__languajes {
-    padding: 0;
-   }
+    .container__languajes {
+        padding: 0;
+    }
 
 
 
@@ -230,23 +232,23 @@
         margin: 0 auto;
     }
 
-  .work-team {
-    width: 90%;
+    .work-team {
+        width: 90%;
 
-  }
+    }
 
-  .flex__team {
-    text-align: left;
-  }
+    .flex__team {
+        text-align: left;
+    }
 
-  .description-team {
-    padding: 0;
-  }
+    .description-team {
+        padding: 0;
+    }
 
-  .team {
-    width: 50%;
-   height: 200px;
-  }
+    .team {
+        width: 50%;
+        height: 200px;
+    }
 
 
     .card__proyectos {
@@ -278,5 +280,5 @@
 @media screen and (min-width: 1366px) {
     .line__progress {
         left: 550px;
-    }    
+    }
 }
