@@ -1,5 +1,6 @@
 /* MOBILE */
 @media screen and (min-width: 320px) {
+
     /* CARRUSEL */
     .carousel-container {
         width: 100%;
@@ -8,21 +9,24 @@
 }
 
 @media screen and (min-width: 360px) {
+
     /* CARRUSEL */
-    .carousel-container {  
+    .carousel-container {
         height: 1100px;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         top: 40%;
-    } 
-    
+    }
+
 }
 
 /* TABLET */
 @media screen and (min-width:768px) {
-      /* CARRUSEL */
-      .carousel-container {
+
+    /* CARRUSEL */
+    .carousel-container {
         width: 100%;
         max-width: 700px;
         margin: 0 auto;
@@ -30,10 +34,11 @@
         height: 750px;
     }
 
-    .prev, .next {
+    .prev,
+    .next {
         top: 50%;
     }
-  
+
 
 
     /* HEADER */
@@ -41,11 +46,11 @@
         padding: 0 2rem;
     }
 
-  
+
 
     /* MAIN */
 
-   .description-team {
+    .description-team {
         padding: 0 2rem;
     }
 
@@ -55,6 +60,10 @@
 
     .texto__proyectos {
         padding: 0 2rem;
+    }
+
+    .title__section {
+        animation-range: entry 50vh cover 80vh;
     }
 
     .title-team {
@@ -73,7 +82,7 @@
         from {
             transform: translateX(-100%);
         }
-    
+
         to {
             transform: translateX(100%);
         }
@@ -95,13 +104,14 @@
         width: 20%;
     }
 
-   
-  
+
+
 }
 
 
 /* DESKTOP */
 @media screen and (min-width: 900px) {
+
     /* HEADER */
     .logoBA {
         position: relative;
@@ -115,7 +125,7 @@
         top: -10px;
         left: 80px;
     }
-    
+
     .name p {
         color: var(--gris);
         font-family: var(--font-barlow-titulo);
@@ -142,7 +152,7 @@
 
 
 
-    
+
     .menu-icon__nav {
         background-image: var(--menu);
         width: 60px;
@@ -163,7 +173,7 @@
         top: 0;
         left: 0;
         right: 0;
-        bottom: 0; 
+        bottom: 0;
         transition: none;
         background: none;
         opacity: 1;
@@ -188,17 +198,17 @@
         align-self: self-start;
     }
 
-   .container__languajes {
-    padding: 0;
-   }
+    .container__languajes {
+        padding: 0;
+    }
 
 
 
     /* MAIN */
-   .texto__proyectos {
-    width: 800px;
-    margin: 0 auto;
-   }
+    .texto__proyectos {
+        width: 800px;
+        margin: 0 auto;
+    }
 
     .skills__desktop {
         animation: none;
@@ -241,6 +251,7 @@
 }
 
 @media screen and (min-width: 900px) {
+
     /* HEADER */
     .description__nav {
         width: 900px;
@@ -253,10 +264,25 @@
         width: 90%;
         margin: 0 auto;
         margin-top: 22rem;
+        animation: cards-desktop auto both;
+        animation-timeline: view();
+        animation-range: entry 30vh cover 80vh;
     }
 
-      /* CARRUSEL */
-      .carousel-container {
+    @keyframes cards-desktop {
+        from {
+            transform: translateY(300px);
+            opacity: 0;
+        }
+
+        to {
+            transform: translateY(0);
+            opacity: 1;
+        }
+    }
+
+    /* CARRUSEL */
+    .carousel-container {
         display: none;
         width: 100%;
         max-width: 600px;
@@ -298,23 +324,23 @@
         margin: 0 auto;
     }
 
-  .work-team {
-    width: 90%;
+    .work-team {
+        width: 90%;
 
-  }
+    }
 
-  .flex__team {
-    text-align: left;
-  }
+    .flex__team {
+        text-align: left;
+    }
 
-  .description-team {
-    padding: 0;
-  }
+    .description-team {
+        padding: 0;
+    }
 
-  .team {
-    width: 50%;
-   height: 200px;
-  }
+    .team {
+        width: 50%;
+        height: 200px;
+    }
 
 
     .card__proyectos {
@@ -367,5 +393,3 @@
     }
 
 }
-
-
