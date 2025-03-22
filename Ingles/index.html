@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="animaciones.css">
 
+    <script type="text/javascript"
+  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+<script type="text/javascript">
+  emailjs.init('PFWxt8eLfuPaWZy6l')
+</script>
+
     <link rel="website icon" type="svg" href="/LOGO/LOGOBA4.svg">
 </head>
 
@@ -50,8 +57,7 @@
 
                     <div class="container__buttons">
 
-                        <a href="../Ingles/PDF/CV-FRONT-END-EN.pdf" class="link-cv"
-                            download="CV-Bautista-Ariza">My CV
+                        <a href="../Ingles/PDF/CV-FRONT-END-EN.pdf" class="link-cv" download="CV-Bautista-Ariza">My CV
                             <div class="line__menu6"></div>
                         </a>
 
@@ -102,6 +108,11 @@
                 </div>
 
                 <div class="info__nav">
+                    <div class="container__titles">
+                        <h1 class="title__1">Web developer</h1>
+                        <h1 class="title__2">UI designer</h1>
+                    </div>
+
                     <h1 class="title__nav">Web developer, UI designer</h1>
                     <p class="description__nav">My mission is to create intuitive and visually appealing digital
                         experiences. I combine aesthetics and functionality to design interfaces that capture attention
@@ -112,6 +123,220 @@
     </header>
 
     <main>
+
+        <!-- BUTTON - OPEN-AGENT -->
+        <div class="">
+            <div class="container__agent">
+                <a href="#show-agent">
+                    <div class="icon__agent"></div>
+                </a>
+            </div>
+
+            
+            <div class="container__agent2" id="show-agent">
+                <!-- LOGO - X -->
+                <div class="gradient__background">
+                    <picture class="icon__agent2"></picture>
+
+                    <!-- CLOSE - AGENT -->
+                    <a href="#" title="close">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                            </path>
+                        </svg>
+                    </a>
+                </div>
+                <!-- INFORMATION - CHATBOT -->
+                <div class="container__chat">
+                    <h2 class="title__agent">Hi there!, I'm the virtual agent of Bautista</h2>
+
+                    <p class="text__agent">¿How can i help you today?, select an option.</p>
+
+                    <div class="links__agent">
+                        <a href="#show-design" class="option__agent">User interface design</a>
+                        <a href="#show-website" class="option__agent">Website</a>
+                        <a href="#show-both" class="option__agent">Both</a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- CONTAINER - USER INTERFACE DESIGN -->
+            <div class="container__design" id="show-design">
+                <!-- CONTENT - USER INTERFACE DESIGN -->
+                <div class="content__design">
+                    <!-- LOGO - X -->
+                    <div class="gradient__background">
+                        <picture class="icon__agent2"></picture>
+
+                        <!-- CLOSE - AGENT -->
+                        <a href="#" title="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- INFORMATION - CHATBOT -->
+                    <div class="container__chat2">
+                        
+                        <h2>User interface design</h2>
+
+                        <p>Perfect, please fill out the blanks to know more about your project.</p>
+
+                        <form id="form-design">
+                            <div class="field">
+                              <input type="text" name="name" id="name" required>
+                              <label for="name">Name</label>
+                            </div>
+                            
+                            <div class="field">
+                              <input type="email" name="email_id" id="email_id" required>
+                              <label for="email_id">Email address</label>
+                            </div>
+                            
+                            <div class="field">
+                              <textarea type="text" name="message" id="message" required></textarea> 
+                              <label for="message">¿What do you have in mind?</label>
+                            </div>
+                            
+                          
+                            <input type="submit" id="button-design" value="Send Email" >
+                          </form>
+
+                       
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!-- CONTAINER - WEBSITE -->
+            <div class="container__design" id="show-website">
+                <!-- CONTENT - USER INTERFACE DESIGN -->
+                <div class="content__design">
+                    <!-- LOGO - X -->
+                    <div class="gradient__background">
+                        <picture class="icon__agent2"></picture>
+
+                        <!-- CLOSE - AGENT -->
+                        <a href="#" title="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- INFORMATION - CHATBOT -->
+                    <div class="container__chat2">
+                        
+                        <h2>Website</h2>
+
+                        <p>Perfect, please fill out the blanks to know more about your project.</p>
+
+                        <form id="form-website">
+                            <div class="field">
+                              <input type="text" name="name" id="name" required>
+                              <label for="name">Name</label>
+                            </div>
+                            
+                            <div class="field">
+                              <input type="email" name="email_id" id="email_id" required>
+                              <label for="email_id">Email address</label>
+                            </div>
+                            
+                            <div class="field">
+                              <textarea type="text" name="message" id="message" required></textarea> 
+                              <label for="message">¿What do you have in mind?</label>
+                            </div>
+                            
+                          
+                            <input type="submit" id="button-website" value="Send Email" >
+                          </form>
+
+                         
+                        
+                    </div>
+                </div>
+            </div>
+
+
+
+             <!-- CONTAINER - BOTH -->
+             <div class="container__design" id="show-both">
+                <!-- CONTENT - BOTH -->
+                <div class="content__design">
+                    <!-- LOGO - X -->
+                    <div class="gradient__background">
+                        <picture class="icon__agent2"></picture>
+
+                        <!-- CLOSE - AGENT -->
+                        <a href="#" title="close">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
+                                viewBox="0 0 24 24">
+                                <path
+                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
+                                </path>
+                            </svg>
+                        </a>
+                    </div>
+                    <!-- INFORMATION - CHATBOT -->
+                    <div class="container__chat2">
+                        
+                        <h2>Both</h2>
+
+                        <p>Perfect, please fill out the blanks to know more about your project.</p>
+
+                        <form id="form-both">
+                            <div class="field">
+                              <input type="text" name="name" id="name" required>
+                              <label for="name">Name</label>
+                            </div>
+                            
+                            <div class="field">
+                              <input type="email" name="email_id" id="email_id" required>
+                              <label for="email_id">Email address</label>
+                            </div>
+                            
+                            <div class="field">
+                              <textarea type="text" name="message" id="message" required></textarea> 
+                              <label for="message">¿What do you have in mind?</label>
+                            </div>
+                            
+                          
+                            <input type="submit" id="button-both" value="Send Email" >
+                          </form>
+
+                         
+                        
+                    </div>
+                </div>
+            </div>
+
+                <!-- Single Modal -->
+                <div id="successModal" class="modal-container">
+                    <div class="modal-content">
+                        <h3>Message sent successfully!</h3>
+                        <p>Bautista will review your message and contact you soon!</p>
+                        <button onclick="closeModal()">Close</button>
+                    </div>
+                </div>
+
+
+        </div>
+
+
+
         <section class="title__main">
             <h1 class="title__section">Why could I be the right choice for you?</h1>
 
@@ -908,16 +1133,109 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-                        <!-- Agrega más cards aquí -->
                     </div>
+
+
+                    <!-- CARD - URBANNEST -->
+                    <div class="card">
+                        <div class="card__proyectos">
+                            <div class="card-urbannest">
+                                <div class="card__buttons">
+                                    <div class="urbannest"></div>
+                                    <div class="link__buttons">
+                                        <a href="https://urbannest-ejoitjadb-bautistas-projects-0f82d57a.vercel.app"
+                                            class="linkweb" target="_blank" rel="noopener">Website</a>
+                                        <a href="https://www.figma.com/design/u6LZZSJ0x1U3qzSUUmeXM8/UrbanNest?node-id=0-1&p=f&t=3hR4R5odrxLl90iD-0"
+                                            class="figmalink" target="_blank" rel="noopener">Figma
+                                            <svg class="figma-icon" viewBox="0 0 100 100" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" alt="figma-icon">
+                                                <g id="bxl-figma.svg">
+                                                    <path id="Vector"
+                                                        d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
+                                                        fill="#C1C2CA" />
+                                                    <path id="Vector_2"
+                                                        d="M63.8833 63.8834C71.5509 63.8834 77.7667 57.6676 77.7667 50C77.7667 42.3325 71.5509 36.1167 63.8833 36.1167C56.2158 36.1167 50 42.3325 50 50C50 57.6676 56.2158 63.8834 63.8833 63.8834Z"
+                                                        fill="#C1C2CA" />
+                                                </g>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <p class="warning">Click here</p>
+                                </div>
+
+                                <div class="description__card">
+                                    <h1 class="titulo__urbannest">
+                                        URBANNEST
+                                    </h1>
+
+                                    <span class="slogan__urbannest">
+                                        Real estate sales
+                                    </span>
+
+                                    <p class="text__urbannest">
+                                        Urbannest is a real estate project designed to integrate urban life
+                                        modern with habitable spaces that prioritize comfort and design
+                                        functional.
+                                        (It's in spanish languaje)
+                                    </p>
+
+
+                                    <div class="container__herramientas">
+                                        <p class="text__herramientas">Made with</p>
+
+                                        <div class="herramientas">
+                                            <svg class="html-tool" viewBox="0 0 100 100"
+                                                xmlns="http://www.w3.org/2000/svg" alt="html-icon">
+                                                <g id="html">
+                                                    <path id="Vector"
+                                                        d="M17.2334 12.5499H82.7709L76.8084 79.8416L49.9292 87.4499L23.2042 79.8416L17.2334 12.5499ZM39.1751 42.9749L38.4542 34.4958L69.8417 34.5041L70.5626 26.3249L29.4376 26.3166L31.6126 51.3083H60.0917L59.0792 61.9999L50.0001 64.5083L40.7751 61.9874L40.1876 55.4041H32.0459L33.0751 68.4166L50.0001 72.9416L66.7834 68.4416L69.1084 42.9791L39.1751 42.9749Z" />
+                                                </g>
+                                            </svg>
+
+                                            <div class="tailwind-icon" id="tailwind-icon">
+                                                <svg viewBox="0 0 100 100" fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg" alt="tailwind-icon">
+                                                    <g id="tailwind">
+                                                        <path id="Vector"
+                                                            d="M77.0835 39.625C73.9587 38.5488 71.2005 36.6137 69.1252 34.0416C66.8379 31.1759 63.9254 28.8714 60.6106 27.3042C57.2958 25.7371 53.6664 24.9489 50.0002 25C45.0684 24.6507 40.1859 26.1718 36.3252 29.2604C32.4644 32.349 29.9087 36.7784 29.1668 41.6666C30.628 39.2218 32.8271 37.3036 35.4476 36.188C38.0682 35.0723 40.9752 34.8169 43.7502 35.4583C46.8697 36.5658 49.6234 38.5122 51.7085 41.0833C54.0083 43.9261 56.9263 46.2069 60.2405 47.752C63.5546 49.2972 67.1775 50.066 70.8335 50C75.7653 50.3492 80.6477 48.8281 84.5085 45.7395C88.3692 42.6509 90.925 38.2215 91.6668 33.3333C90.2322 35.8074 88.0401 37.7546 85.4142 38.8875C82.7883 40.0204 79.8676 40.2789 77.0835 39.625ZM22.9168 60.375C26.0416 61.4512 28.7998 63.3863 30.8752 65.9583C33.1625 68.824 36.0749 71.1286 39.3897 72.6957C42.7046 74.2628 46.3339 75.051 50.0002 75C54.932 75.3492 59.8144 73.8281 63.6751 70.7395C67.5359 67.6509 70.0917 63.2215 70.8335 58.3333C69.3724 60.7781 67.1733 62.6964 64.5527 63.812C61.9321 64.9276 59.0252 65.1831 56.2502 64.5416C53.1306 63.4341 50.3769 61.4878 48.2918 58.9166C45.9858 56.0809 43.0666 53.8051 39.7539 52.2606C36.4413 50.7162 32.8214 49.9432 29.1668 50C24.235 49.6507 19.3526 51.1718 15.4919 54.2604C11.6311 57.349 9.07534 61.7784 8.3335 66.6666C9.76811 64.1926 11.9602 62.2454 14.5861 61.1125C17.2121 59.9796 20.1327 59.721 22.9168 60.375Z" />
+                                                    </g>
+                                                </svg>
+
+                                            </div>
+
+                                            <div class="container-js">
+                                                <svg xmlns="http://www.w3.org/2000/svg" alt="javascript-icon"
+                                                    class="js-icon" viewBox="0 0 24 24">
+                                                    <path
+                                                        d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z">
+                                                    </path>
+                                                </svg>
+                                            </div>
+
+
+                                            <svg class="figma-icon1" viewBox="0 0 100 100" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg" alt="figma-icon">
+                                                <g id="bxl-figma.svg">
+                                                    <path id="Vector1"
+                                                        d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
+                                                        fill="#0D0C0C" />
+                                                    <path id="Vector2"
+                                                        d="M63.8833 63.8834C71.5509 63.8834 77.7667 57.6676 77.7667 50C77.7667 42.3325 71.5509 36.1167 63.8833 36.1167C56.2158 36.1167 50 42.3325 50 50C50 57.6676 56.2158 63.8834 63.8833 63.8834Z"
+                                                        fill="#0D0C0C" />
+                                                </g>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Agrega más cards aquí -->
                 </div>
                 <button class="prev" onclick="moveSlide(-1)">&#10094;</button>
                 <button class="next" onclick="moveSlide(1)">&#10095;</button>
             </div>
-
 
             <!-- CARDS-DESKTOP -->
             <div class="cards__animation cards__animation--tablet">
@@ -1535,6 +1853,99 @@
                     </div>
                 </div>
 
+                <!-- CARD - URBANNEST -->
+                <div class="card__proyectos">
+                    <div class="card-urbannest">
+                        <div class="card__buttons">
+                            <div class="urbannest"></div>
+                            <div class="link__buttons">
+                                <a href="https://urbannest-ejoitjadb-bautistas-projects-0f82d57a.vercel.app" class="linkweb" target="_blank"
+                                    rel="noopener">Website</a>
+                                <a href="https://www.figma.com/design/u6LZZSJ0x1U3qzSUUmeXM8/UrbanNest?t=PJGDKCFiElo6FGKn-0"
+                                    class="figmalink" target="_blank" rel="noopener">Figma
+                                    <svg class="figma-icon" viewBox="0 0 100 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" alt="figma-icon">
+                                        <g id="bxl-figma.svg">
+                                            <path id="Vector"
+                                                d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
+                                                fill="#C1C2CA" />
+                                            <path id="Vector_2"
+                                                d="M63.8833 63.8834C71.5509 63.8834 77.7667 57.6676 77.7667 50C77.7667 42.3325 71.5509 36.1167 63.8833 36.1167C56.2158 36.1167 50 42.3325 50 50C50 57.6676 56.2158 63.8834 63.8833 63.8834Z"
+                                                fill="#C1C2CA" />
+                                        </g>
+                                    </svg>
+                                </a>
+                            </div>
+                            <p class="warning">Click here</p>
+                        </div>
+
+                        <div class="description__card">
+                            <h1 class="titulo__academy">
+                                URBANNEST
+                            </h1>
+
+                            <span class="slogan__academy">
+                                Real state sales
+                            </span>
+
+                            <p class="text__academy">
+                                Urbannest is a real estate project designed to integrate urban life
+                                modern with habitable spaces that prioritize comfort and design
+                                functional.
+                                (It's in spanish languaje)
+                            </p>
+
+
+                            <div class="container__herramientas">
+                                <p class="text__herramientas">Made with</p>
+
+                                <div class="herramientas">
+                                    <svg class="html-tool" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"
+                                        alt="html-icon">
+                                        <g id="html">
+                                            <path id="Vector"
+                                                d="M17.2334 12.5499H82.7709L76.8084 79.8416L49.9292 87.4499L23.2042 79.8416L17.2334 12.5499ZM39.1751 42.9749L38.4542 34.4958L69.8417 34.5041L70.5626 26.3249L29.4376 26.3166L31.6126 51.3083H60.0917L59.0792 61.9999L50.0001 64.5083L40.7751 61.9874L40.1876 55.4041H32.0459L33.0751 68.4166L50.0001 72.9416L66.7834 68.4416L69.1084 42.9791L39.1751 42.9749Z" />
+                                        </g>
+                                    </svg>
+
+                                    <div class="tailwind-icon" id="tailwind-icon">
+                                        <svg viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg"
+                                            alt="tailwind-icon">
+                                            <g id="tailwind">
+                                                <path id="Vector"
+                                                    d="M77.0835 39.625C73.9587 38.5488 71.2005 36.6137 69.1252 34.0416C66.8379 31.1759 63.9254 28.8714 60.6106 27.3042C57.2958 25.7371 53.6664 24.9489 50.0002 25C45.0684 24.6507 40.1859 26.1718 36.3252 29.2604C32.4644 32.349 29.9087 36.7784 29.1668 41.6666C30.628 39.2218 32.8271 37.3036 35.4476 36.188C38.0682 35.0723 40.9752 34.8169 43.7502 35.4583C46.8697 36.5658 49.6234 38.5122 51.7085 41.0833C54.0083 43.9261 56.9263 46.2069 60.2405 47.752C63.5546 49.2972 67.1775 50.066 70.8335 50C75.7653 50.3492 80.6477 48.8281 84.5085 45.7395C88.3692 42.6509 90.925 38.2215 91.6668 33.3333C90.2322 35.8074 88.0401 37.7546 85.4142 38.8875C82.7883 40.0204 79.8676 40.2789 77.0835 39.625ZM22.9168 60.375C26.0416 61.4512 28.7998 63.3863 30.8752 65.9583C33.1625 68.824 36.0749 71.1286 39.3897 72.6957C42.7046 74.2628 46.3339 75.051 50.0002 75C54.932 75.3492 59.8144 73.8281 63.6751 70.7395C67.5359 67.6509 70.0917 63.2215 70.8335 58.3333C69.3724 60.7781 67.1733 62.6964 64.5527 63.812C61.9321 64.9276 59.0252 65.1831 56.2502 64.5416C53.1306 63.4341 50.3769 61.4878 48.2918 58.9166C45.9858 56.0809 43.0666 53.8051 39.7539 52.2606C36.4413 50.7162 32.8214 49.9432 29.1668 50C24.235 49.6507 19.3526 51.1718 15.4919 54.2604C11.6311 57.349 9.07534 61.7784 8.3335 66.6666C9.76811 64.1926 11.9602 62.2454 14.5861 61.1125C17.2121 59.9796 20.1327 59.721 22.9168 60.375Z" />
+                                            </g>
+                                        </svg>
+
+                                    </div>
+
+                                    <div class="container-js">
+                                        <svg xmlns="http://www.w3.org/2000/svg" alt="javascript-icon" class="js-icon"
+                                            viewBox="0 0 24 24">
+                                            <path
+                                                d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z">
+                                            </path>
+                                        </svg>
+                                    </div>
+
+
+                                    <svg class="figma-icon1" viewBox="0 0 100 100" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" alt="figma-icon">
+                                        <g id="bxl-figma.svg">
+                                            <path id="Vector1"
+                                                d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
+                                                fill="#0D0C0C" />
+                                            <path id="Vector2"
+                                                d="M63.8833 63.8834C71.5509 63.8834 77.7667 57.6676 77.7667 50C77.7667 42.3325 71.5509 36.1167 63.8833 36.1167C56.2158 36.1167 50 42.3325 50 50C50 57.6676 56.2158 63.8834 63.8833 63.8834Z"
+                                                fill="#0D0C0C" />
+                                        </g>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
                 <!-- more cards here -->
             </div>
         </div>
@@ -1572,18 +1983,6 @@
                             </a>
                         </li>
 
-                        <li>
-                            <a href="https://mail.google.com/mail/u/0/#inbox?compose=jrjtXVbTxPsQzgflLRshxBzTPDhPtlRLpkfSGvsBDCBVqLCQBjTsDFQtLWRfCCtMnLdbBzlX"
-                                class="link__contact">
-                                <svg class="gmail__icon" viewBox="0 0 100 100" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg" alt="gmail-icon">
-                                    <path id="Vector"
-                                        d="M79.1667 0H20.8333C15.31 0.00721753 10.0148 2.40401 6.10925 6.66464C2.20367 10.9253 0.00661607 16.7018 0 22.7273L0 77.2727C0.00661607 83.2982 2.20367 89.0747 6.10925 93.3354C10.0148 97.596 15.31 99.9928 20.8333 100H79.1667C84.69 99.9928 89.9852 97.596 93.8908 93.3354C97.7963 89.0747 99.9934 83.2982 100 77.2727V22.7273C99.9934 16.7018 97.7963 10.9253 93.8908 6.66464C89.9852 2.40401 84.69 0.00721753 79.1667 0V0ZM20.8333 9.09091H79.1667C81.6616 9.09626 84.098 9.91598 86.1623 11.4446C88.2266 12.9732 89.8244 15.1407 90.75 17.6682L58.8417 52.4818C56.4935 55.0332 53.3142 56.4658 50 56.4658C46.6858 56.4658 43.5065 55.0332 41.1583 52.4818L9.25 17.6682C10.1756 15.1407 11.7734 12.9732 13.8377 11.4446C15.902 9.91598 18.3384 9.09626 20.8333 9.09091V9.09091ZM79.1667 90.9091H20.8333C17.5181 90.9091 14.3387 89.4724 11.9945 86.9151C9.65029 84.3578 8.33333 80.8893 8.33333 77.2727V29.5455L35.2667 58.9091C39.1776 63.1648 44.4761 65.5547 50 65.5547C55.5239 65.5547 60.8224 63.1648 64.7333 58.9091L91.6667 29.5455V77.2727C91.6667 80.8893 90.3497 84.3578 88.0055 86.9151C85.6613 89.4724 82.4819 90.9091 79.1667 90.9091Z" />
-                                </svg>
-                                <span class="text__icon">Gmail</span>
-                            </a>
-                        </li>
-
 
                         <li>
                             <a href="https://www.upwork.com/freelancers/~01b77a592d46643f5a?mp_source=share"
@@ -1615,6 +2014,10 @@
     </footer>
 
 
+    <script type="module" src="mesagge-design.js"></script>
+    <script type="module" src="mesagge-website.js"></script>
+    <script type="module" src="mesagge-both.js"></script>
+    <script src="/Ingles/modal.js"></script>
     <script src="/Ingles/carrusel2.js"></script>
 </body>
 
