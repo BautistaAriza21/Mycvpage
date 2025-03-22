@@ -61,6 +61,10 @@
 
 
     /* MAIN */
+    
+  .title__1 .title__2 {
+    font-size: var(--font-barlow-titulo);
+  }
 
     .description-team {
         padding: 0 2rem;
@@ -291,6 +295,12 @@
 
 
     /* MAIN */
+    
+
+    .title__1 .title__2 {
+        font-size: var(--font-barlow-titulo);
+      }
+
     .texto__proyectos {
         width: 800px;
         margin: 0 auto;
@@ -520,6 +530,12 @@
     }
 
     .card-glowcare {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    .card-urbannest {
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
