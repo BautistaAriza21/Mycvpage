@@ -734,10 +734,15 @@ body {
     border-top-right-radius: 20px;
 }
 
+a[href="#close"]:focus-within {
+    display: none;
+}
+
 .close__agent {
     fill: var(--gris);
     width: 50px;
     height: 50px;
+    cursor: pointer;
 }
 
 .container__chat {
@@ -814,7 +819,16 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    animation: glow 2s infinite ease-in-out alternate;
+    border-radius: 100%;
+    border-color: var(--gris);
 }
+
+@keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+    50% { box-shadow: 0 0 15px rgba(255, 255, 255, 1); }
+    100% { box-shadow: 0 0 5px rgba(255, 255, 255, 0.5); }
+  }
 
 .container__chat2 {
     padding: 1rem;
