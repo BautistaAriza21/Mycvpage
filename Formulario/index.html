@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Servicios</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <div id="inicio">
+            <h2>Elige el servicio que estás buscando</h2>
+            <div class="options">
+                <button onclick="seleccionarServicio('ui')">Diseño de Interfaz</button>
+                <button onclick="seleccionarServicio('web')">Sitio Web</button>
+                <button onclick="seleccionarServicio('both')">Ambos</button>
+            </div>
+        </div>
+
+        <div id="ui-section" class="hidden">
+            <h3>¿Qué tipo de diseño de interfaz buscas?</h3>
+            <div class="sub-options">
+                <button onclick="mostrarEstilo('ui', 'App móvil')">App móvil</button>
+                <button onclick="mostrarEstilo('ui', 'Dashboard')">Dashboard</button>
+                <button onclick="mostrarEstilo('ui', 'Web')">Web</button>
+                <button onclick="mostrarEstilo('ui', 'Otro')">Otro</button>
+                <div id="otro-ui-tipo" class="hidden">
+                    <input type="text" id="input-ui-tipo" placeholder="Especifica el tipo..." oninput="verificarCampoOtro('uiTipo')">
+                    <button id="continuar-ui-tipo" class="hidden" onclick="continuarDesdeOtro('uiTipo')">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="estilo-ui-section" class="hidden">
+            <h3>¿Qué estilo de diseño te gustaría que implemente?</h3>
+            <div class="sub-options">
+                <button onclick="seleccionarTipo('ui', 'Minimalista y funcional')">Minimalista y funcional</button>
+                <button onclick="seleccionarTipo('ui', 'Moderno y vibrante')">Moderno y vibrante</button>
+                <button onclick="seleccionarTipo('ui', 'Clásico y elegante')">Clásico y elegante</button>
+                <button onclick="seleccionarTipo('ui', 'Creativo y experimental')">Creativo y experimental</button>
+                <button onclick="seleccionarTipo('ui', 'Otro')">Otro</button>
+                <div id="otro-ui-estilo" class="hidden">
+                    <input type="text" id="input-ui-estilo" placeholder="Especifica el estilo..." oninput="verificarCampoOtro('uiEstilo')">
+                    <button id="continuar-uiEstilo" class="hidden" onclick="continuarDesdeOtro('uiEstilo')">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="web-section" class="hidden">
+            <h3>¿Qué tipo de sitio web necesitas?</h3>
+            <div class="sub-options">
+                <button onclick="mostrarEstiloWeb('Landing Page')">Landing Page</button>
+                <button onclick="mostrarEstiloWeb('Tienda Online')">Tienda Online</button>
+                <button onclick="mostrarEstiloWeb('Blog / Informativo')">Blog / Informativo</button>
+                <button onclick="mostrarEstiloWeb('Otro')">Otro</button>
+                <div id="otro-web-tipo" class="hidden">
+                    <input type="text" id="input-web-tipo" placeholder="Especifica el tipo..." oninput="verificarCampoOtro('webTipo')">
+                    <button id="continuar-webTipo" class="hidden" onclick="continuarDesdeOtro('webTipo')">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="estilo-web-section" class="hidden">
+            <h3>¿Qué estilo de sitio web prefieres?</h3>
+            <div class="sub-options">
+                <button onclick="seleccionarTipo('web', 'Minimalista y funcional')">Minimalista y funcional</button>
+                <button onclick="seleccionarTipo('web', 'Moderno y vibrante')">Moderno y vibrante</button>
+                <button onclick="seleccionarTipo('web', 'Clásico y elegante')">Clásico y elegante</button>
+                <button onclick="seleccionarTipo('web', 'Creativo y experimental')">Creativo y experimental</button>
+                <button onclick="seleccionarTipo('web', 'Otro')">Otro</button>
+                <div id="otro-web-estilo" class="hidden">
+                    <input type="text" id="input-web-estilo" placeholder="Especifica el estilo..." oninput="verificarCampoOtro('webEstilo')">
+                    <button id="continuar-webEstilo" class="hidden" onclick="continuarDesdeOtro('webEstilo')">Continuar</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="contacto" class="hidden">
+            <h3>¡Estoy listo para ayudarte a concretar tu proyecto!</h3>
+            <a href="#" class="contact-btn">Contactar ahora</a>
+        </div>
+    </div>
+
+    <script src="funcion-formulario.js"></script>
+</body>
+</html>
