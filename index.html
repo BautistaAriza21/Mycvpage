@@ -11,12 +11,20 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="animaciones.css">
 
+    <!-- SCRIPT EMAIL-JS -->
     <script type="text/javascript"
     src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
-  
+
+    <!-- SCRIPT EMAIL-JS -->
   <script type="text/javascript">
     emailjs.init('cQCXzq7XwYfDBEwll')
   </script>
+
+  <!-- SCRIPT CHATBASE -->
+  <script>
+    (function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="FZLMQCWMCnzr_WE8rvzof";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+    </script>
+
 
     <link rel="website icon" type="svg" href="/LOGO/LOGOBA4.svg">
 </head>
@@ -126,187 +134,7 @@
     <main>
 
          <!-- BOTÓN AGENTE -->
-    <div class="">
 
-        <div class="container__agent">
-            <a href="#show-agent">
-                <div class="icon__agent"></div>
-            </a>
-        </div>
-
-        <!-- CONTENEDOR AGENTE -->
-        <div class="container__agent2" id="show-agent">
-            <div class="gradient__background">
-                <picture class="icon__agent2"></picture>
-                <a href="#" title="cerrar">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24" viewBox="0 0 24 24">
-                        <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                    </svg>
-                </a>
-            </div>
-            
-            <!-- CHATBOT -->
-            <div class="container__chat">
-                <h2 class="title__agent">¡Hola! Soy el agente virtual de Bautista</h2>
-                <p class="text__agent">¿En qué puedo ayudarte hoy? Selecciona una opción:</p>
-                <div class="links__agent">
-                    <a href="#show-design" class="option__agent">Diseño de interfaz</a>
-                    <a href="#show-website" class="option__agent">Sitio web</a>
-                    <a href="#show-both" class="option__agent">Ambos</a>
-                </div>
-            </div>
-        </div>
-
-        <!-- FORMULARIOS -->
-        <!-- Diseño de Interfaz -->
-        <div class="container__design" id="show-design">
-            <div class="content__design">
-                <div class="gradient__background">
-                    <picture class="icon__agent2"></picture>
-                    <a href="#" title="cerrar">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24" viewBox="0 0 24 24">
-                            <path d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z"></path>
-                        </svg>
-                    </a>
-                </div>
-                <div class="container__chat2">
-                    <h2>Diseño de Interfaz</h2>
-                    <p>Perfecto, completa los siguientes campos para conocer más sobre tu proyecto:</p>
-                    <form id="form-diseño">
-                        <div class="field">
-                            <input type="text" name="name" id="name" required>
-                            <label for="name">Nombre</label>
-                        </div>
-                        <div class="field">
-                            <input type="email" name="email_id" id="email_id" required>
-                            <label for="email_id">Correo electrónico</label>
-                        </div>
-                        <div class="field">
-                            <textarea name="message" id="message" required></textarea>
-                            <label for="message">¿Qué tienes en mente?</label>
-                        </div>
-                        <input type="submit" id="button-diseño" value="Enviar mensaje">
-                    </form>
-                </div>
-            </div>
-        </div>
-
-
-                    <!-- CONTENEDOR - SITIO WEB -->
-                    <div class="container__design" id="show-website">
-                        <!-- CONTENIDO - SITIO WEB -->
-                        <div class="content__design">
-                            <!-- LOGO - X -->
-                            <div class="gradient__background">
-                                <picture class="icon__agent2"></picture>
-        
-                                <!-- CLOSE - AGENT -->
-                                <a href="#" title="cerrar">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <!-- INFORMACION - CHATBOT -->
-                            <div class="container__chat2">
-                                
-                                <h2>Sitio web</h2>
-        
-                                <p>Perfecto, completa los siguientes campos para conocer más sobre tu proyecto.</p>
-        
-                                <form id="form-sitioweb">
-                                    <div class="field">
-                                      <input type="text" name="name" id="name" required>
-                                      <label for="name">Nombre</label>
-                                    </div>
-                                    
-                                    <div class="field">
-                                      <input type="email" name="email_id" id="email_id" required>
-                                      <label for="email_id">Correo electrónico</label>
-                                    </div>
-                                    
-                                    <div class="field">
-                                      <textarea type="text" name="message" id="message" required></textarea> 
-                                      <label for="message">¿Qué tienes en mente?</label>
-                                    </div>
-                                    
-                                  
-                                    <input type="submit" id="button-sitioweb" value="Enviar mensaje" >
-                                  </form>
-        
-                                 
-                                
-                            </div>
-                        </div>
-                    </div>
-
-
-
-                    <!-- CONTENEDOR - AMBOS -->
-                    <div class="container__design" id="show-both">
-                        <!-- CONTENIDO - AMBOS -->
-                        <div class="content__design">
-                            <!-- LOGO - X -->
-                            <div class="gradient__background">
-                                <picture class="icon__agent2"></picture>
-        
-                                <!-- CERRAR - AGENTE -->
-                                <a href="#" title="close">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
-                                        viewBox="0 0 24 24">
-                                        <path
-                                            d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                        </path>
-                                    </svg>
-                                </a>
-                            </div>
-                            <!-- INFORMACION - CHATBOT -->
-                            <div class="container__chat2">
-                                
-                                <h2>Ambos</h2>
-        
-                                <p>Perfecto, completa los siguientes campos para conocer más sobre tu proyecto.</p>
-        
-                                <form id="form-ambos">
-                                    <div class="field">
-                                      <input type="text" name="name" id="name" required>
-                                      <label for="name">Nombre</label>
-                                    </div>
-                                    
-                                    <div class="field">
-                                      <input type="email" name="email_id" id="email_id" required>
-                                      <label for="email_id">Correo electrónico</label>
-                                    </div>
-                                    
-                                    <div class="field">
-                                      <textarea type="text" name="message" id="message" required></textarea> 
-                                      <label for="message">¿Qué tienes en mente?</label>
-                                    </div>
-                                    
-                                  
-                                    <input type="submit" id="button-ambos" value="Enviar mensaje" >
-                                  </form>
-        
-                                 
-                                
-                            </div>
-                        </div>
-                    </div>
-
-        
-
-        <!-- Modal Único -->
-        <div id="successModal" class="modal-container">
-            <div class="modal-content">
-                <h3>¡Mensaje enviado correctamente!</h3>
-                <p>Bautista revisará tu mensaje<br>y se pondrá en contacto contigo pronto!</p>
-                <button onclick="closeModal()">Cerrar</button>
-            </div>
-        </div>
-    </div>
 
 
 
@@ -2002,10 +1830,10 @@
     </footer>
 
     <script src="/carrusel.js"></script>
-    <script type="module" src="/mensaje-diseño.js"></script>
+    <!-- <script type="module" src="/mensaje-diseño.js"></script>
     <script type="module" src="/mensaje-sitioweb.js"></script>
     <script type="module" src="/mensaje-ambos.js"></script>
-    <script type="module" src="/mensaje-modal.js"></script>
+    <script type="module" src="/mensaje-modal.js"></script> -->
 </body>
 
 </html>
