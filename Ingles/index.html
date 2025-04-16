@@ -11,12 +11,15 @@
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="animaciones.css">
 
-    <script type="text/javascript"
-  src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    <!-- SCRIPT - EMAILJS -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 
-<script type="text/javascript">
-  emailjs.init('9xiK8HyIy6mFlniBW')
-</script>
+    <!-- SCRIPT - EMAILJS -->
+    <script type="text/javascript">
+        emailjs.init('9xiK8HyIy6mFlniBW')
+    </script>
+
+    
 
     <link rel="website icon" type="svg" href="/LOGO/LOGOBA4.svg">
 </head>
@@ -126,216 +129,8 @@
 
     <main>
 
-        <!-- BUTTON - OPEN-AGENT -->
-        <div class="">
-            <div class="container__agent">
-                <a href="#show-agent">
-                    <div class="icon__agent"></div>
-                </a>
-            </div>
-
-            
-            <div class="container__agent2" id="show-agent">
-                <!-- LOGO - X -->
-                <div class="gradient__background">
-                    <picture class="icon__agent2"></picture>
-
-                    <!-- CLOSE - AGENT -->
-                    <a href="#" title="close">
-                        <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
-                            viewBox="0 0 24 24">
-                            <path
-                                d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                            </path>
-                        </svg>
-                    </a>
-                </div>
-                <!-- INFORMATION - CHATBOT -->
-                <div class="container__chat">
-                    <h2 class="title__agent">Hi there!, I'm the virtual agent of Bautista</h2>
-
-                    <p class="text__agent">¿How can i help you today?, select an option.</p>
-
-                    <div class="links__agent">
-                        <a href="#show-design" class="option__agent">User interface design</a>
-                        <a href="#show-website" class="option__agent">Website</a>
-                        <a href="#show-both" class="option__agent">Both</a>
-                    </div>
-                </div>
-            </div>
 
 
-
-
-
-            <!-- CONTAINER - USER INTERFACE DESIGN -->
-            <div class="container__design" id="show-design">
-                <!-- CONTENT - USER INTERFACE DESIGN -->
-                <div class="content__design">
-                    <!-- LOGO - X -->
-                    <div class="gradient__background">
-                        <picture class="icon__agent2"></picture>
-
-                        <!-- CLOSE - AGENT -->
-                        <a href="#close" title="close">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- INFORMATION - CHATBOT -->
-                    <div class="container__chat2">
-                        
-                        <h2>User interface design</h2>
-
-                        <p>Perfect, please fill out the blanks to know more about your project.</p>
-
-                        <form id="form-design">
-                            <div class="field">
-                              <input type="text" name="name" id="name" required>
-                              <label for="name">Name</label>
-                            </div>
-                            
-                            <div class="field">
-                              <input type="email" name="email_id" id="email_id" required>
-                              <label for="email_id">Email address</label>
-                            </div>
-                            
-                            <div class="field">
-                              <textarea type="text" name="message" id="message" required></textarea> 
-                              <label for="message">¿What do you have in mind?</label>
-                            </div>
-                            
-                          
-                            <input type="submit" id="button-design" value="Send Email" >
-                          </form>
-
-                       
-                        
-                    </div>
-                </div>
-            </div>
-
-
-
-            <!-- CONTAINER - WEBSITE -->
-            <div class="container__design" id="show-website">
-                <!-- CONTENT - USER INTERFACE DESIGN -->
-                <div class="content__design">
-                    <!-- LOGO - X -->
-                    <div class="gradient__background">
-                        <picture class="icon__agent2"></picture>
-
-                        <!-- CLOSE - AGENT -->
-                        <a href="#" title="close">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- INFORMATION - CHATBOT -->
-                    <div class="container__chat2">
-                        
-                        <h2>Website</h2>
-
-                        <p>Perfect, please fill out the blanks to know more about your project.</p>
-
-                        <form id="form-website">
-                            <div class="field">
-                              <input type="text" name="name" id="name" required>
-                              <label for="name">Name</label>
-                            </div>
-                            
-                            <div class="field">
-                              <input type="email" name="email_id" id="email_id" required>
-                              <label for="email_id">Email address</label>
-                            </div>
-                            
-                            <div class="field">
-                              <textarea type="text" name="message" id="message" required></textarea> 
-                              <label for="message">¿What do you have in mind?</label>
-                            </div>
-                            
-                          
-                            <input type="submit" id="button-website" value="Send Email" >
-                          </form>
-
-                         
-                        
-                    </div>
-                </div>
-            </div>
-
-
-
-             <!-- CONTAINER - BOTH -->
-             <div class="container__design" id="show-both">
-                <!-- CONTENT - BOTH -->
-                <div class="content__design">
-                    <!-- LOGO - X -->
-                    <div class="gradient__background">
-                        <picture class="icon__agent2"></picture>
-
-                        <!-- CLOSE - AGENT -->
-                        <a href="#" title="close">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="close__agent" width="24" height="24"
-                                viewBox="0 0 24 24">
-                                <path
-                                    d="m16.192 6.344-4.243 4.242-4.242-4.242-1.414 1.414L10.535 12l-4.242 4.242 1.414 1.414 4.242-4.242 4.243 4.242 1.414-1.414L13.364 12l4.242-4.242z">
-                                </path>
-                            </svg>
-                        </a>
-                    </div>
-                    <!-- INFORMATION - CHATBOT -->
-                    <div class="container__chat2">
-                        
-                        <h2>Both</h2>
-
-                        <p>Perfect, please fill out the blanks to know more about your project.</p>
-
-                        <form id="form-both">
-                            <div class="field">
-                              <input type="text" name="name" id="name" required>
-                              <label for="name">Name</label>
-                            </div>
-                            
-                            <div class="field">
-                              <input type="email" name="email_id" id="email_id" required>
-                              <label for="email_id">Email address</label>
-                            </div>
-                            
-                            <div class="field">
-                              <textarea type="text" name="message" id="message" required></textarea> 
-                              <label for="message">¿What do you have in mind?</label>
-                            </div>
-                            
-                          
-                            <input type="submit" id="button-both" value="Send Email" >
-                          </form>
-
-                         
-                        
-                    </div>
-                </div>
-            </div>
-
-                <!-- Single Modal -->
-                <div id="successModal" class="modal-container">
-                    <div class="modal-content">
-                        <h3>Message sent successfully!</h3>
-                        <p>Bautista will review your message and contact you soon!</p>
-                        <button onclick="closeModal()">Close</button>
-                    </div>
-                </div>
-
-
-        </div>
 
 
 
@@ -1861,8 +1656,8 @@
                         <div class="card__buttons">
                             <div class="urbannest"></div>
                             <div class="link__buttons">
-                                <a href="https://urbannest-ejoitjadb-bautistas-projects-0f82d57a.vercel.app" class="linkweb" target="_blank"
-                                    rel="noopener">Website</a>
+                                <a href="https://urbannest-ejoitjadb-bautistas-projects-0f82d57a.vercel.app"
+                                    class="linkweb" target="_blank" rel="noopener">Website</a>
                                 <a href="https://www.figma.com/design/u6LZZSJ0x1U3qzSUUmeXM8/UrbanNest?t=PJGDKCFiElo6FGKn-0"
                                     class="figmalink" target="_blank" rel="noopener">Figma
                                     <svg class="figma-icon" viewBox="0 0 100 100" fill="none"
@@ -2016,10 +1811,10 @@
     </footer>
 
 
-    <script type="module" src="mesagge-design.js"></script>
+    <!-- <script type="module" src="mesagge-design.js"></script>
     <script type="module" src="mesagge-website.js"></script>
     <script type="module" src="mesagge-both.js"></script>
-    <script src="/Ingles/modal.js"></script>
+    <script src="/Ingles/modal.js"></script> -->
     <script src="/Ingles/carrusel2.js"></script>
 </body>
 
