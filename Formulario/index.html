@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <div class="container">
+    <div class="container-selection">
         <div id="inicio">
             <h2>Elige el servicio que estás buscando</h2>
             <div class="options">
@@ -75,9 +75,57 @@
             </div>
         </div>
 
+        <div id="resumen-seleccion" class="hidden">
+            <h3>Resumen de tu selección:</h3>
+            <div id="resumen-contenido">
+                <!-- This will be populated dynamically with JavaScript -->
+            </div>
+            <div class="resumen-botones">
+                <button onclick="revisarSelecciones()" class="btn-revisar">Revisar</button>
+                <button onclick="continuarAContacto()" class="btn-continuar">Continuar</button>
+            </div>
+        </div>
+
         <div id="contacto" class="hidden">
             <h3>¡Estoy listo para ayudarte a concretar tu proyecto!</h3>
             <a href="#" class="contact-btn">Contactar ahora</a>
+        </div>
+
+       
+    </div>
+
+     <!-- Accordion de preguntas frecuentes -->
+     <div class="accordion">
+        <h3>Preguntas frecuentes</h3>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Qué pasa después de enviar el formulario?</button>
+            <div class="accordion-content">
+                <p>Luego de enviarlo, me llegara tu propuesta a mi correo electronico. Acto seguido me pondré en contacto contigo en menos de 24hs para conversar los detalles de tu proyecto.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Puedo cambiar mi elección después?</button>
+            <div class="accordion-content">
+                <p>¡Sí! Esto solo sirve como guía inicial para entender lo que buscás. Todo puede ajustarse después.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Cuánto cuesta un diseño o desarrollo?</button>
+            <div class="accordion-content">
+                <p>El presupuesto se define según la complejidad o estilo de tu proyecto. ¡No te preocupes! Siempre intentamos adaptarnos a tus necesidades.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Qué diferencia hay entre Diseño UI y Desarrollo Web?</button>
+            <div class="accordion-content">
+                <p>El diseño UI se enfoca en cómo se ve e interactúa tu producto. El desarrollo web es el proceso de convertir ese diseño en una página funcional.</p>
+            </div>
+        </div>
+        <div class="accordion-item">
+            <button class="accordion-header">¿Qué pasa si no sé qué estilo elegir?</button>
+            <div class="accordion-content">
+                <p>¡No te preocupes! Podés elegir 'Otro' o redactar en el campo "Estilos a definir" y lo charlamos juntos luego.</p>
+            </div>
         </div>
     </div>
 
