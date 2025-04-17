@@ -699,6 +699,17 @@ body {
     fill: rgb(0, 128, 248);
 }
 
+.javascript-icon svg {
+    width: 100px;
+    height: 100px;
+    fill: var(--negro);
+    transition:.5s;
+}
+
+.javascript-icon svg:hover {
+    fill: rgb(190, 165, 1);
+}
+
 #tailwind {
     width: 100px;
     height: 100px;
