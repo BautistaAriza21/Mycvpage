@@ -157,6 +157,36 @@
         padding: 0 2rem;
     }
 
+    .parent {
+        gap: 3rem;
+    }
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+    width: 200px;
+    height: 200px;
+}
+
+
+.html__container,
+.css__container,
+.tailwind__container,
+.bootstrap__container,
+.figma__container,
+.javascript__container,
+.react__container,
+.github__container,
+.photoshop__container {
+    width: 200px;
+    height: 200px;
+}
+
 }
 
 @media screen and (min-width: 800px) {
@@ -327,6 +357,25 @@
             opacity: 1;
         }
     }
+
+    .parent {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+
+.div1,
+.div2,
+.div3,
+.div4,
+.div5,
+.div6,
+.div7,
+.div8 {
+    width: 300px;
+    height: 300px;
+}
+
+
 }
 
 .text__visit {
