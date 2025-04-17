@@ -273,55 +273,7 @@ body {
     text-decoration: underline;
 }
 
-.container__learning {
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 1.5rem;
-}
 
-.skills-i-use {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.circle--black {
-    background-color: var(--negro);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-}
-
-.skills-to-learn {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-}
-
-.circle--gray {
-    background-color: var(--gris);
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-
-}
-
-.skills-i-use p {
-    font-family: var(--font-lato-texto);
-    font-size: var(--tamaño-texto);
-    color: var(--negro);
-}
-
-.skills-to-learn p {
-    font-family: var(--font-lato-texto);
-    font-size: var(--tamaño-texto);
-    color: var(--negro);
-}
 
 .progress__path {
     position: relative;
@@ -329,14 +281,7 @@ body {
     margin-top: 2rem;
 }
 
-.line__progress {
-    width: 10px;
-    height: 100%;
-    position: absolute;
-    top: 40px;
-    left: 89px;
-    background-image: linear-gradient(to bottom, #0D0C0C 66%, #C1C2CA 76%);
-}
+
 
 .html__container {
     display: flex;
