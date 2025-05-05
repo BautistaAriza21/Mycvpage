@@ -601,6 +601,17 @@
         height: 100px;
     }
 
+    .contenedor__dispositivos {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .circulo-blur {
+        width: 900px;
+        margin: 0 auto;
+    }
+
+  
   
     /* FOOTER */
 
