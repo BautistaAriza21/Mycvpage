@@ -1513,7 +1513,7 @@ body {
 .contenedor__dispositivos {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
     position: absolute;
     top: 0;
     left: 0;
