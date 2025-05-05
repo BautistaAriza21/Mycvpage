@@ -104,7 +104,14 @@
         width: 20%;
     }
 
+    .container__client {
+        margin-top: 10rem;
+    }
 
+    .container__links {
+        flex-direction: row;
+        height: 300px;
+    }
 
 }
 
@@ -390,6 +397,52 @@
         width: 100%;
         max-width: 400px;
         margin: 0 auto;
+    }
+
+    .card-urbannest {
+        width: 100%;
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* FOOTER */
+    .description__footer {
+        padding: 10rem 1rem;
+    }
+
+    .title__footer {
+        font-size: 2rem;
+        width: 600px;
+        margin: 0 auto;
+    }
+
+
+    .container-dashboard {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+        place-content: center;
+        place-self: center;
+        height: 500px;
+        column-gap: 30px;
+    }
+
+    .dashboard4 {
+        display: flex;
+    }
+
+    .dashboard5 {
+        display: flex;
+    }
+
+   .dashboard6 {
+        display: flex;
+    }
+
+   
+
+    .container__form {
+        top: 30px;
     }
 
 }
