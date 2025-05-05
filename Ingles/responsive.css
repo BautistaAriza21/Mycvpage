@@ -405,6 +405,16 @@
         margin: 0 auto;
     }
 
+    .container__devices {
+        width: 600px;
+        margin: 0 auto;
+    }
+
+    .blur-circle {
+        width: 900px;
+        margin: 0 auto;
+    }
+
     /* FOOTER */
     .description__footer {
         padding: 10rem 1rem;
