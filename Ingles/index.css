@@ -2144,7 +2144,7 @@ body {
     fill: var(--gris);
     margin: 0 10px;
     transform: scale(1);
-    transition: fill 0.3s, transform 0.3s;
+    transition: color 0.3s, transform 0.3s;
 }
 
 .container__social svg:hover {
