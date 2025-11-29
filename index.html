@@ -6,7 +6,12 @@
         content="Bautista Ariza - Desarrollador web y Diseñador UX/UI especializado en crear experiencias digitales intuitivas y atractivas. Portafolio y servicios de diseño web profesional.">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bautista Ariza - Desarrollador Web y Diseñador UI | Portafolio y Servicios</title>
+    <meta name="keywords"
+        content="desarrollador web, diseñador UX/UI, diseño web, portafolio, Bautista Ariza, desarrollo frontend, experiencia de usuario, interfaz de usuario, diseño responsive">
+    <meta name="robots" content="index, follow">
+    <meta name="author" content="Bautista Ariza">
+
+    <title>Bautista Ariza - Desarrollador web, Diseñador UX/UI & QA Tester | Portafolio y Servicios</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="responsive.css">
     <link rel="stylesheet" href="animaciones.css">
@@ -22,15 +27,15 @@
 
     <!-- SCRIPT CHATBASE -->
     <script>
-            (function () { if (!window.chatbase || window.chatbase("getState") !== "initialized") { window.chatbase = (...arguments) => { if (!window.chatbase.q) { window.chatbase.q = [] } window.chatbase.q.push(arguments) }; window.chatbase = new Proxy(window.chatbase, { get(target, prop) { if (prop === "q") { return target.q } return (...args) => target(prop, ...args) } }) } const onLoad = function () { const script = document.createElement("script"); script.src = "https://www.chatbase.co/embed.min.js"; script.id = "yzAxOl5yDbyL5yaEkP8cn"; script.domain = "www.chatbase.co"; document.body.appendChild(script) }; if (document.readyState === "complete") { onLoad() } else { window.addEventListener("load", onLoad) } })();
-    </script>
+(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="OIU7fIb_EP6NYnLWI91im";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
     <link rel="website icon" type="svg" href="/LOGO/LOGOBA4.svg">
 </head>
 
 <body>
     <header>
         <nav class="nav__container">
-            <div class="desktop__nav">
+            <div class="desktop__nav finisher-header">
                 <div class="navbar__menu">
                     <div class="container__logo">
                         <div class="logoBA">
@@ -65,33 +70,39 @@
                     <div class="container__buttons">
 
 
-                        <a href="/PDF/CV-desarrolladorweb-ATS.pdf" class="link-cv" download="CV-Bautista-Ariza">Mi CV
+                        <a href="/PDF/CV_Bautista_Ariza_ES_v2.pdf" class="link-cv" download="CV-Bautista-Ariza"
+                            title="Descargar mi CV en formato PDF" aria-label="Descargar mi Curriculum Vitae">Mi CV
                             <div class="line__menu6"></div>
                         </a>
 
-                        <a href="#habilidades" class="habilidades">Habilidades
+                        <a href="#habilidades" class="habilidades" title="Ver mis habilidades técnicas"
+                            aria-label="Ir a la sección de habilidades">Habilidades
                             <div class="line__menu5"></div>
                         </a>
 
-                        <a href="#proyectos" class="proyectos__link">Proyectos
+                        <a href="#proyectos" class="proyectos__link" title="Ver mis proyectos realizados"
+                            aria-label="Ir a la sección de proyectos">Proyectos
                             <div class="line__menu4"></div>
                         </a>
 
-                        <a href="#contacto" class="contact__link">Contacto
+                        <a href="#contacto" class="contact__link" title="Contactar conmigo"
+                            aria-label="Ir a la sección de contacto">Contacto
                             <div class="line__menu3"></div>
                         </a>
 
                         <div class="container__button1">
-                            <a href="/Sobremi/index.html" class="button__menu1">Sobre mi</a>
+                            <a class='button__menu1' href='/sobremi/indexnew.html' title="Conocer más sobre mí"
+                                aria-label="Ir a la página sobre mí">Sobre mi</a>
                             <div class="line__menu1"></div>
                         </div>
 
                         <div class="container__button2">
                             <details class="container__languajes">
-                                <summary>
+                                <summary aria-label="Seleccionar idioma">
                                     Idiomas
 
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 24 24">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="arrow-icon" viewBox="0 0 24 24"
+                                        aria-hidden="true">
                                         <path
                                             d="M16.293 9.293 12 13.586 7.707 9.293l-1.414 1.414L12 16.414l5.707-5.707z">
                                         </path>
@@ -100,8 +111,10 @@
                                 </summary>
 
                                 <div class="languajes">
-                                    <a href="/Ingles/index.html" class="link__languajes">Inglés</a>
-                                    <a href="/index.html" class="link__languajes">Español</a>
+                                    <a class='link__languajes' href='/ingles/' title="Switch to English version"
+                                        lang="en" hreflang="en" aria-label="Cambiar a versión en inglés">Inglés</a>
+                                    <a class='link__languajes' href='/' title="Cambiar a versión en español" lang="es"
+                                        hreflang="es" aria-label="Mantener versión en español">Español</a>
                                 </div>
 
                             </details>
@@ -116,11 +129,11 @@
 
                 <div class="info__nav">
                     <div class="container__titles">
-                        <h1 class="title__1">Desarrollador web</h1>
-                        <h1 class="title__2">Diseñador UX/UI</h1>
+                        <h1 class="title__1 title">Desarrollador web</h1>
+                        <h2 class="title__2 title">Diseñador UX/UI</h2>
+                        <h3 class="title__3 title">QA Tester</h3>
                     </div>
 
-                    <h1 class="title__nav">Desarrollador web, Diseñador UI</h1>
                     <p class="description__nav">Mi misión es crear experiencias digitales intuitivas y visualmente
                         atractivas. Combino estética y funcionalidad para diseñar interfaces que capturen la atención y
                         guíen al usuario de manera fluida.</p>
@@ -141,7 +154,7 @@
 
 
         <section class="title__main">
-            <h1 class="title__section">¿POR QUÉ PODRÍA SER EL ADECUADO PARA USTED?</h1>
+            <h3 class="title__section">¿POR QUÉ PODRÍA SER EL ADECUADO PARA USTED?</h3>
 
 
             <div class="work__container">
@@ -201,8 +214,10 @@
 
                 <div class="skills__mobile skills__tablet skills__desktop">
                     <div class="html-icon">
-                        <svg width="100" height="100" alt="html" viewBox="0 0 100 100"
+                        <svg width="100" height="100" viewBox="0 0 100 100"
+                            aria-label="HTML5 - Lenguaje de marcado para estructurar páginas web"
                             xmlns="http://www.w3.org/2000/svg">
+                            <title>HTML5</title>
                             <g id="html">
                                 <path id="Vector"
                                     d="M17.2334 12.5499H82.7709L76.8084 79.8416L49.9292 87.4499L23.2042 79.8416L17.2334 12.5499ZM39.1751 42.9749L38.4542 34.4958L69.8417 34.5041L70.5626 26.3249L29.4376 26.3166L31.6126 51.3083H60.0917L59.0792 61.9999L50.0001 64.5083L40.7751 61.9874L40.1876 55.4041H32.0459L33.0751 68.4166L50.0001 72.9416L66.7834 68.4416L69.1084 42.9791L39.1751 42.9749Z" />
@@ -212,8 +227,10 @@
                     </div>
 
                     <div class="css-icon">
-                        <svg width="100" height="100" alt="css" viewBox="0 0 100 100" fill="none"
+                        <svg width="100" height="100" viewBox="0 0 100 100"
+                            aria-label="CSS3 - Lenguaje de estilos para diseñar páginas web" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
+                            <title>CSS3</title>
                             <g id="css">
                                 <path id="Vector"
                                     d="M17.4668 13.0958H82.5293L76.6126 79.9042L49.9293 87.4542L23.3918 79.9L17.4668 13.0958ZM70.4168 26.7667L29.5835 26.7583L30.2418 34.8792L61.6126 34.8875L60.8251 43.3042H40.2501L40.996 51.275H60.1501L59.0168 62.1917L50.0001 64.6833L40.846 62.1708L40.2585 55.6333H32.1751L33.0751 67.5792L50.0001 72.85L66.646 68.1125L70.4168 26.7667Z" />
@@ -224,7 +241,9 @@
 
 
                     <div class="javascript-icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                            aria-label="JavaScript - Lenguaje de programación para desarrollo web">
+                            <title>JavaScript</title>
                             <g id="js">
                                 <path
                                     d="M3 3h18v18H3V3zm16.525 13.707c-.131-.821-.666-1.511-2.252-2.155-.552-.259-1.165-.438-1.349-.854-.068-.248-.078-.382-.034-.529.113-.484.687-.629 1.137-.495.293.09.563.315.732.676.775-.507.775-.507 1.316-.844-.203-.314-.304-.451-.439-.586-.473-.528-1.103-.798-2.126-.775l-.528.067c-.507.124-.991.395-1.283.754-.855.968-.608 2.655.427 3.354 1.023.765 2.521.933 2.712 1.653.18.878-.652 1.159-1.475 1.058-.607-.136-.945-.439-1.316-1.002l-1.372.788c.157.359.337.517.607.832 1.305 1.316 4.568 1.249 5.153-.754.021-.067.18-.528.056-1.237l.034.049zm-6.737-5.434h-1.686c0 1.453-.007 2.898-.007 4.354 0 .924.047 1.772-.104 2.033-.247.517-.886.451-1.175.359-.297-.146-.448-.349-.623-.641-.047-.078-.082-.146-.095-.146l-1.368.844c.229.473.563.879.994 1.137.641.383 1.502.507 2.404.305.588-.17 1.095-.519 1.358-1.059.384-.697.302-1.553.299-2.509.008-1.541 0-3.083 0-4.635l.003-.042z">
@@ -238,8 +257,10 @@
 
 
                     <div class="tailwind-icon">
-                        <svg width="100" height="100" alt="tailwind css" viewBox="0 0 100 100" fill="none"
+                        <svg width="100" height="100" viewBox="0 0 100 100"
+                            aria-label="Tailwind CSS - Framework CSS para diseño rápido y responsivo" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
+                            <title>Tailwind CSS</title>
                             <g id="tailwind">
                                 <path id="Vector"
                                     d="M77.0835 39.625C73.9587 38.5488 71.2005 36.6137 69.1252 34.0416C66.8379 31.1759 63.9254 28.8714 60.6106 27.3042C57.2958 25.7371 53.6664 24.9489 50.0002 25C45.0684 24.6507 40.1859 26.1718 36.3252 29.2604C32.4644 32.349 29.9087 36.7784 29.1668 41.6666C30.628 39.2218 32.8271 37.3036 35.4476 36.188C38.0682 35.0723 40.9752 34.8169 43.7502 35.4583C46.8697 36.5658 49.6234 38.5122 51.7085 41.0833C54.0083 43.9261 56.9263 46.2069 60.2405 47.752C63.5546 49.2972 67.1775 50.066 70.8335 50C75.7653 50.3492 80.6477 48.8281 84.5085 45.7395C88.3692 42.6509 90.925 38.2215 91.6668 33.3333C90.2322 35.8074 88.0401 37.7546 85.4142 38.8875C82.7883 40.0204 79.8676 40.2789 77.0835 39.625ZM22.9168 60.375C26.0416 61.4512 28.7998 63.3863 30.8752 65.9583C33.1625 68.824 36.0749 71.1286 39.3897 72.6957C42.7046 74.2628 46.3339 75.051 50.0002 75C54.932 75.3492 59.8144 73.8281 63.6751 70.7395C67.5359 67.6509 70.0917 63.2215 70.8335 58.3333C69.3724 60.7781 67.1733 62.6964 64.5527 63.812C61.9321 64.9276 59.0252 65.1831 56.2502 64.5416C53.1306 63.4341 50.3769 61.4878 48.2918 58.9166C45.9858 56.0809 43.0666 53.8051 39.7539 52.2606C36.4413 50.7162 32.8214 49.9432 29.1668 50C24.235 49.6507 19.3526 51.1718 15.4919 54.2604C11.6311 57.349 9.07534 61.7784 8.3335 66.6666C9.76811 64.1926 11.9602 62.2454 14.5861 61.1125C17.2121 59.9796 20.1327 59.721 22.9168 60.375Z" />
@@ -248,8 +269,10 @@
 
                     </div>
                     <div class="bootstrap-icon">
-                        <svg width="100" height="100" alt="bootstrap" viewBox="0 0 100 100" fill="none"
+                        <svg width="100" height="100" viewBox="0 0 100 100"
+                            aria-label="Bootstrap - Framework CSS para desarrollo web responsivo" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
+                            <title>Bootstrap</title>
                             <g id="bootstrap">
                                 <path id="Vector"
                                     d="M75.0081 12.4875H24.9956C21.6805 12.4974 18.5041 13.819 16.1604 16.1636C13.8166 18.5081 12.4961 21.685 12.4873 25V75.0084C12.4994 78.3217 13.8212 81.4958 16.1645 83.8383C18.5078 86.1808 21.6823 87.5016 24.9956 87.5126H75.0081C78.3207 87.5005 81.4942 86.1792 83.8366 83.8368C86.1789 81.4944 87.5002 78.321 87.5123 75.0084V25C87.5024 21.686 86.1821 18.5104 83.8395 16.1662C81.4969 13.8221 78.3222 12.4996 75.0081 12.4875ZM68.1748 65.1834C67.5415 66.6834 66.554 68.0167 65.2873 69.0459C63.7894 70.2092 62.0842 71.0773 60.2623 71.6042C58.2206 72.2334 55.7873 72.5584 52.9706 72.5584H32.8665V28.7875H54.129C58.0581 28.7875 61.2123 29.675 63.5748 31.4792C65.9456 33.2959 67.1331 35.9875 67.1331 39.6375C67.1331 41.8375 66.5915 43.7334 65.5123 45.2917C64.4331 46.8459 62.8873 48.0584 60.8831 48.9084V49.05C63.5581 49.6125 65.6206 50.875 66.9831 52.85C68.3456 54.8209 69.0373 57.3042 69.0373 60.3042C69.0373 61.9917 68.7123 63.5875 68.0998 65.0834L68.1831 65.1709V65.1834H68.1748ZM59.4915 54.3959C58.204 53.2209 56.4123 52.65 54.0873 52.65H40.5706V66.3H54.1248C56.4331 66.3 58.254 65.7001 59.5331 64.4875C60.8165 63.2834 61.4665 61.5667 61.4665 59.3667C61.4456 57.2084 60.8165 55.5375 59.5331 54.3959H59.4748H59.4915ZM57.6123 45.5667C58.8581 44.5209 59.4623 43.0126 59.4623 41.0501C59.4623 38.8584 58.9165 37.2917 57.8081 36.4C56.7081 35.5084 55.1165 35.0417 53.0331 35.0417H40.529V47.1167H53.0331C54.8498 47.1209 56.4081 46.5875 57.6123 45.5667Z" />
@@ -258,8 +281,10 @@
 
                     </div>
                     <div class="figma">
-                        <svg width="100" height="100" alt="figma" viewBox="0 0 100 100" fill="none"
+                        <svg width="100" height="100" viewBox="0 0 100 100"
+                            aria-label="Figma - Herramienta de diseño de interfaces" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
+                            <title>Figma</title>
                             <g id="bxl-figma.svg">
                                 <path id="Vector"
                                     d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
@@ -273,8 +298,10 @@
 
                     </div>
                     <div class="photoshop-icon">
-                        <svg width="100" height="100" alt="photoshop" viewBox="0 0 101 100" fill="none"
+                        <svg width="100" height="100" viewBox="0 0 101 100"
+                            aria-label="Adobe Photoshop - Software de edición de imágenes" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
+                            <title>Adobe Photoshop</title>
                             <g id="photoshop">
                                 <path id="Vector"
                                     d="M44.5278 43.6667C44.5909 44.9318 44.2085 46.179 43.4473 47.1915C42.6861 48.2039 41.5941 48.9176 40.3612 49.2083C38.1856 49.8483 35.9176 50.1159 33.6528 50C33.0695 50 33.0278 49.625 33.0278 49.2083V38.5833C33.0278 38.2917 33.3195 37.7917 33.4862 37.7917C35.8697 37.5256 38.2814 37.6808 40.6112 38.25C41.7836 38.5713 42.8111 39.2835 43.5234 40.2686C44.2357 41.2537 44.5901 42.4526 44.5278 43.6667Z" />
@@ -285,7 +312,8 @@
 
                     </div>
                     <div class="github-icon">
-                        <svg width="100" height="100" alt="github" viewBox="0 0 101 100" fill="none"
+                        <svg width="100" height="100" viewBox="0 0 101 100"
+                            aria-label="GitHub - Plataforma de control de versiones y colaboración" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="github">
                                 <path id="Vector"
@@ -1156,91 +1184,6 @@
                 </div>
 
 
-
-                <!-- CARD-EXPLOREASE -->
-                <div class="card__proyectos">
-                    <div class="card-explorease card-explorease--tablet">
-                        <div class="card__buttons">
-                            <div class="explore-img"></div>
-                            <div class="link__buttons">
-                                <a href="https://explorease.netlify.app/" class="linkweb" target="_blank"
-                                    rel="noopener">Sitio web</a>
-                                <a href="https://www.figma.com/design/YnTxCl7s7fiBHRIKulsmG8/ExploreEase?t=iV1YN4r0GKs4AyMC-0"
-                                    class="figmalink" target="_blank" rel="noopener">Figma
-                                    <svg class="figma-icon" alt="figma" viewBox="0 0 100 100" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g id="bxl-figma.svg">
-                                            <path id="Vector"
-                                                d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
-                                                fill="#C1C2CA" />
-                                            <path id="Vector_2"
-                                                d="M63.8833 63.8834C71.5509 63.8834 77.7667 57.6676 77.7667 50C77.7667 42.3325 71.5509 36.1167 63.8833 36.1167C56.2158 36.1167 50 42.3325 50 50C50 57.6676 56.2158 63.8834 63.8833 63.8834Z"
-                                                fill="#C1C2CA" />
-                                        </g>
-                                    </svg>
-                                </a>
-                            </div>
-                            <p class="warning">Haz click</p>
-                        </div>
-
-                        <div class="description__card">
-                            <h1 class="titulo__explore">
-                                Explore Ease
-                            </h1>
-
-                            <span class="slogan__explore">
-                                Viajes & Aventura
-                            </span>
-
-                            <p class="text__explore">
-                                Proyecto web enfocado en ofrecer vuelos
-                                internacionales a todas las personas
-                                interesadas en recorrer el mundo y disfrutar
-                                el servicio de nuestros viajes. <br>
-                                (Seccion: Home page, About us, contact) <br>
-                                (el proyecto esta en idioma ingles)
-                            </p>
-
-
-                            <div class="container__herramientas">
-                                <p class="text__herramientas">Hecho con</p>
-
-                                <div class="herramientas">
-                                    <svg class="html-tool" alt="html" viewBox="0 0 100 100"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g id="html">
-                                            <path id="Vector"
-                                                d="M17.2334 12.5499H82.7709L76.8084 79.8416L49.9292 87.4499L23.2042 79.8416L17.2334 12.5499ZM39.1751 42.9749L38.4542 34.4958L69.8417 34.5041L70.5626 26.3249L29.4376 26.3166L31.6126 51.3083H60.0917L59.0792 61.9999L50.0001 64.5083L40.7751 61.9874L40.1876 55.4041H32.0459L33.0751 68.4166L50.0001 72.9416L66.7834 68.4416L69.1084 42.9791L39.1751 42.9749Z" />
-                                        </g>
-                                    </svg>
-
-                                    <svg class="css-tool" alt="css" viewBox="0 0 100 100" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g id="css">
-                                            <path id="Vector"
-                                                d="M17.4668 13.0958H82.5293L76.6126 79.9042L49.9293 87.4542L23.3918 79.9L17.4668 13.0958ZM70.4168 26.7667L29.5835 26.7583L30.2418 34.8792L61.6126 34.8875L60.8251 43.3042H40.2501L40.996 51.275H60.1501L59.0168 62.1917L50.0001 64.6833L40.846 62.1708L40.2585 55.6333H32.1751L33.0751 67.5792L50.0001 72.85L66.646 68.1125L70.4168 26.7667Z" />
-                                        </g>
-                                    </svg>
-
-
-                                    <svg class="figma-icon1" alt="figma" viewBox="0 0 100 100" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg">
-                                        <g id="bxl-figma.svg">
-                                            <path id="Vector1"
-                                                d="M63.8834 36.1166C67.4928 36.0083 70.9181 34.4983 73.4329 31.9069C75.9477 29.3155 77.3542 25.8464 77.3542 22.2354C77.3542 18.6243 75.9477 15.1553 73.4329 12.5638C70.9181 9.97242 67.4928 8.46245 63.8834 8.35413H36.1167C32.5073 8.46245 29.082 9.97242 26.5671 12.5638C24.0523 15.1553 22.6458 18.6243 22.6458 22.2354C22.6458 25.8464 24.0523 29.3155 26.5671 31.9069C29.082 34.4983 32.5073 36.0083 36.1167 36.1166C32.4757 36.1797 29.0052 37.6704 26.4526 40.2675C23.9 42.8647 22.4697 46.3605 22.4697 50.002C22.4697 53.6436 23.9 57.1394 26.4526 59.7366C29.0052 62.3337 32.4757 63.8244 36.1167 63.8875C32.4935 63.9762 29.0485 65.4779 26.5174 68.0719C23.9862 70.6658 22.5693 74.1465 22.5693 77.7708C22.5693 81.3951 23.9862 84.8758 26.5174 87.4697C29.0485 90.0637 32.4935 91.5654 36.1167 91.6541C39.7988 91.6519 43.3294 90.1879 45.9327 87.5839C48.536 84.9798 49.9989 81.4488 50 77.7666V36.1166H63.8834Z"
-                                                fill="#0D0C0C" />
-                                            <path id="Vector2"
-                                                d="M63.8833 63.8834C71.5509 63.8834 77.7667 57.6676 77.7667 50C77.7667 42.3325 71.5509 36.1167 63.8833 36.1167C56.2158 36.1167 50 42.3325 50 50C50 57.6676 56.2158 63.8834 63.8833 63.8834Z"
-                                                fill="#0D0C0C" />
-                                        </g>
-                                    </svg>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
                 <!-- CARD-EDUPRO-ACADEMY -->
                 <div class="card__proyectos">
                     <div class="card-edupro-academy card-edupro-academy--tablet">
@@ -1785,24 +1728,33 @@
         <div class="contenedor__cliente">
             <!-- CONTENEDOR - PROYECTO-CLIENTE -->
             <div class="contenedor__proyecto-cliente">
+                <div class="descripcion-cliente">
                 <h2>¿Necesitas un sitio que destaque y cumpla con tus objetivos?</h2>
+                <p>Diseño y desarrollo sitios web que capturan la atención y están construidos para cumplir objetivos
+                    específicos. Dale a tu proyecto el impacto y la profesionalidad que se merece.
+                </p>
 
-                <div class="contenedor__blur-dispositivos">
-                    <!-- CIRCULO - BLUR -->
-                    <div class="circulo-blur"></div>
+                <a href="#formulario-container" class="btn-cliente">Comenzemos ahora</a>
+                </div>
 
-                    <!-- CONTENEDOR - DISPOSITIVOS -->
-                    <div class="contenedor__dispositivos">
-                        <div class="dispositivo-tablet" tabindex="0"></div>
-                        <div class="dispositivo-laptop" tabindex="0"></div>
-                        <div class="dispositivo-phone" tabindex="0"></div>
-                    </div>
+                <div class="contenedor-devices">
+                    <picture>
+                        <div class="phone"></div>
+                    </picture>
+
+                    <picture>
+                        <div class="tablet"></div>
+                    </picture>
+
+                    <picture>
+                        <div class="laptop"></div>
+                    </picture>
                 </div>
             </div>
 
             <!-- SITIO - CORRECTO -->
             <div class="contenedor__correcto">
-                <h2 class="titulo__correcto">Estas en el sitio correcto</h2>
+                <h2 class="titulo__correcto">¿Por qué elegirme para tu próximo proyecto?</h2>
 
                 <div class="card-correcto correcto1">
                     <picture>
@@ -1825,9 +1777,9 @@
                     </picture>
 
                     <div class="descripcion__correcto">
-                        <h2>Codigo limpio y rapido</h2>
+                        <h2>Código limpio y rápido</h2>
                         <p>
-                            Uso HTML5, CSS3, JavaScript para sitios rápidos y 100% responsivos. Puedo Integrar
+                            Uso HTML5, CSS3, JavaScript para sitios rápidos y 100% responsivos. Puedo integrar
                             frameworks
                             como Tailwind CSS o Bootstrap si se requiere.
                         </p>
@@ -1916,7 +1868,7 @@
                     convertir tus ideas en resultados concretos.
                 </h1>
             </div>
-        </div>   
+        </div>
     </main>
 
     <footer class="background__footer">
@@ -1943,11 +1895,12 @@
                     </div>
 
                     <!-- FORMULARIO -->
-                    <div class="formulario-container">
+                    <div class="formulario-container" id="formulario-container">
                         <div class="formulario-content">
                             <p class="formulario-texto">
                                 Contacta conmigo completando el formulario o podes hablar con mi
-                                asistente personal Codey para saber mas acerca de mis servicios como diseñador y desarrollador web.
+                                asistente personal Codey para saber mas acerca de mis servicios como diseñador y
+                                desarrollador web.
                             </p>
                             <form action="https://formcarry.com/s/l4LDITwFJNP" method="POST"
                                 enctype="multipart/form-data">
@@ -1985,7 +1938,7 @@
 
                 <ul class="contenedor__opciones">
                     <li class="link"><a href="#">Inicio</a></li>
-                    <li class="link"><a href="/Sobremi/index.html">Sobre mi</a></li>
+                    <li class="link"><a href='/sobremi/indexnew.html'>Sobre mi</a></li>
                     <li class="link"><a href="#proyectos">Proyectos</a></li>
                     <li class="link"><a href="#habilidades">Habilidades</a></li>
                     <li class="link"><a href="#contacto">Contacto</a></li>
@@ -1994,32 +1947,32 @@
 
                 <div class="contenedor__redes">
                     <!-- BEHANCE -->
-                     <a href="https://www.behance.net/bautistaariza">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.64 6.287 6.287 0 0 1-1.609.206H2V5.731h5.803zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337a4.033 4.033 0 0 1-1.439-.958 4.37 4.37 0 0 1-.905-1.485 5.433 5.433 0 0 1-.32-1.899c0-.666.111-1.289.329-1.864a4.376 4.376 0 0 1 .934-1.493c.405-.42.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.44a3.967 3.967 0 0 1 1.39 1.182c.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729zm2.812-4.681c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199a1.97 1.97 0 0 0-.62.491 1.772 1.772 0 0 0-.328.628 2.82 2.82 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409zm-3.918-4.663h4.989v1.215h-4.989z">
-                        </path>
-                    </svg>
-                     </a>
+                    <a href="https://www.behance.net/bautistaariza">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M7.803 5.731c.589 0 1.119.051 1.605.155.483.103.895.273 1.243.508.343.235.611.547.804.939.187.387.28.871.28 1.443 0 .62-.14 1.138-.421 1.551-.283.414-.7.753-1.256 1.015.757.219 1.318.602 1.69 1.146.374.549.557 1.206.557 1.976 0 .625-.119 1.162-.358 1.613a3.11 3.11 0 0 1-.974 1.114 4.315 4.315 0 0 1-1.399.64 6.287 6.287 0 0 1-1.609.206H2V5.731h5.803zm-.351 4.972c.48 0 .878-.114 1.192-.345.312-.228.463-.604.463-1.119 0-.286-.051-.522-.151-.707a1.114 1.114 0 0 0-.417-.428 1.683 1.683 0 0 0-.597-.215 3.609 3.609 0 0 0-.697-.061H4.71v2.875h2.742zm.151 5.239c.267 0 .521-.023.76-.077.241-.052.455-.136.637-.261.182-.12.332-.283.44-.491.109-.206.162-.475.162-.798 0-.634-.179-1.085-.533-1.358-.355-.27-.831-.404-1.414-.404H4.71v3.39h2.893zm8.565-.041c.367.358.896.538 1.584.538.493 0 .919-.125 1.278-.373.354-.249.57-.515.653-.79h2.155c-.346 1.072-.871 1.838-1.589 2.299-.709.463-1.572.693-2.58.693-.702 0-1.334-.113-1.9-.337a4.033 4.033 0 0 1-1.439-.958 4.37 4.37 0 0 1-.905-1.485 5.433 5.433 0 0 1-.32-1.899c0-.666.111-1.289.329-1.864a4.376 4.376 0 0 1 .934-1.493c.405-.42.885-.751 1.444-.994a4.634 4.634 0 0 1 1.858-.362c.754 0 1.413.146 1.979.44a3.967 3.967 0 0 1 1.39 1.182c.363.493.622 1.058.783 1.691.161.632.217 1.292.171 1.983h-6.431c.001.704.238 1.371.606 1.729zm2.812-4.681c-.291-.322-.783-.496-1.385-.496-.391 0-.714.065-.974.199a1.97 1.97 0 0 0-.62.491 1.772 1.772 0 0 0-.328.628 2.82 2.82 0 0 0-.111.587h3.982c-.058-.624-.272-1.085-.564-1.409zm-3.918-4.663h4.989v1.215h-4.989z">
+                            </path>
+                        </svg>
+                    </a>
 
                     <!-- UPWORK -->
-                     <a href="https://www.upwork.com/freelancers/~01b77a592d46643f5a">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <path
-                            d="M17.47 6.07a4.54 4.54 0 0 0-4.38 3.69 19.9 19.9 0 0 1-2.28-4.9H8.55v6a2.14 2.14 0 1 1-4.28 0v-6L2 4.91v6a4.4 4.4 0 1 0 8.8-.05v-1a20.55 20.55 0 0 0 1.65 2.7l-1.38 6.61h2.32l1-4.81a5.61 5.61 0 0 0 3.11.89 4.57 4.57 0 0 0 0-9.14zm0 6.83a4.09 4.09 0 0 1-2.55-1l.23-.91v-.05c.16-1 .66-2.6 2.35-2.6a2.25 2.25 0 0 1 2.27 2.24 2.41 2.41 0 0 1-2.27 2.32z">
-                        </path>
-                    </svg>
-                     </a>
+                    <a href="https://www.upwork.com/freelancers/~01b77a592d46643f5a">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <path
+                                d="M17.47 6.07a4.54 4.54 0 0 0-4.38 3.69 19.9 19.9 0 0 1-2.28-4.9H8.55v6a2.14 2.14 0 1 1-4.28 0v-6L2 4.91v6a4.4 4.4 0 1 0 8.8-.05v-1a20.55 20.55 0 0 0 1.65 2.7l-1.38 6.61h2.32l1-4.81a5.61 5.61 0 0 0 3.11.89 4.57 4.57 0 0 0 0-9.14zm0 6.83a4.09 4.09 0 0 1-2.55-1l.23-.91v-.05c.16-1 .66-2.6 2.35-2.6a2.25 2.25 0 0 1 2.27 2.24 2.41 2.41 0 0 1-2.27 2.32z">
+                            </path>
+                        </svg>
+                    </a>
 
                     <!-- LINKEDIN -->
-                     <a href="https://www.linkedin.com/in/bautista-ariza-518144189/">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
-                        <circle cx="4.983" cy="5.009" r="2.188"></circle>
-                        <path
-                            d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
-                        </path>
-                    </svg>
-                     </a>
+                    <a href="https://www.linkedin.com/in/bautista-ariza-518144189/">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                            <circle cx="4.983" cy="5.009" r="2.188"></circle>
+                            <path
+                                d="M9.237 8.855v12.139h3.769v-6.003c0-1.584.298-3.118 2.262-3.118 1.937 0 1.961 1.811 1.961 3.218v5.904H21v-6.657c0-3.27-.704-5.783-4.526-5.783-1.835 0-3.065 1.007-3.568 1.96h-.051v-1.66H9.237zm-6.142 0H6.87v12.139H3.095z">
+                            </path>
+                        </svg>
+                    </a>
                 </div>
             </div>
 
@@ -2077,6 +2030,46 @@
     </footer>
 
     <script src="/carrusel.js"></script>
+    <script src="/finisher-header.es5.min.js"></script>
+
+    <script type="text/javascript">
+        new FinisherHeader({
+            "count": 100,
+            "size": {
+                "min": 2,
+                "max": 23,
+                "pulse": 0.1
+            },
+            "speed": {
+                "x": {
+                    "min": 0.1,
+                    "max": 3.8
+                },
+                "y": {
+                    "min": 0,
+                    "max": 0.4
+                }
+            },
+            "colors": {
+                "background": "#0d0c0c",
+                "particles": [
+                    "#ffffff",
+                    "#2f2e41",
+                    "#ffffff"
+                ]
+            },
+            "blending": "overlay",
+            "opacity": {
+                "center": 1,
+                "edge": 0.25
+            },
+            "skew": 0,
+            "shapes": [
+                "c"
+            ]
+        });
+    </script>
+
     <!-- <script type="module" src="/mensaje-diseño.js"></script>
     <script type="module" src="/mensaje-sitioweb.js"></script>
     <script type="module" src="/mensaje-ambos.js"></script>

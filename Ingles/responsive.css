@@ -234,11 +234,7 @@
         margin: 0 auto;
     }
 
-    .card-explorease {
-        width: 100%;
-        max-width: 400px;
-        margin: 0 auto;
-    }
+    
 
     .card-edupro-academy {
         width: 100%;
@@ -413,6 +409,15 @@
     .blur-circle {
         width: 900px;
         margin: 0 auto;
+    }
+
+    .container-devices {
+        height: 800px;
+    }
+
+    .container-devices picture>div {
+        height: 800px;
+        background-size: contain;
     }
 
     /* FOOTER */

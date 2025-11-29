@@ -386,6 +386,19 @@
     .warning {
         display: none;
     }
+
+    .contenedor__proyecto-cliente {
+        height: 800px;
+    }
+
+   .contenedor__proyecto-cliente picture>div {
+    width: 100%;
+    height: 800px;
+}
+
+.phone, .tablet, .laptop {
+    background-size: contain;
+}
 }
 
 @media screen and (min-width: 900px) {

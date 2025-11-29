@@ -1,0 +1,157 @@
+
+/* PHONE */
+@media screen and (min-width: 320px) {
+   header>.me-description {
+    animation: up 1s infinite alternate;
+   }
+
+   @keyframes up {
+    from {
+     transform: translateY(0);
+    }
+    to {
+     transform: translateY(-40px);
+    }
+   }
+  }
+
+@media screen and (min-width: 375px) {
+   header>.me-description {
+     transform: translateY(-300px);
+   }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) {
+   header>.me-description {
+    height: 250px;
+    bottom: -120px;
+    animation: up 1s infinite alternate;
+   }
+
+   @keyframes up {
+    from {
+     transform: translateY(0);
+    }
+    to {
+     transform: translateY(-60px);
+    }
+   }
+
+   .contenedor-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+   }
+
+   .card {
+    width: 32%;
+    margin: 0;
+   }
+
+   .card2 {
+    background-image: var(--gradient3);
+   }
+
+   .blog-position {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-shadow: none;
+   }
+
+   .contenedor-blog1 {
+    width: 40%;
+   
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+    height: 600px;
+   }
+
+   .contenedor-blog2 {
+    height: 600px;
+    overflow: hidden;
+   }
+
+   .scrollbar {
+    height: 100%;
+   }
+
+   .container--content {
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem auto;
+    width: 90%;
+   }
+
+   .container--content > div {
+    width: 50%;
+    height: auto;
+    margin: 0 1rem;
+   }
+
+   .img-capacitacion {
+    height: 100%;
+   }
+
+   .black-box {
+    height: 100%;
+   }
+
+   .capacitacion-description {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: baseline;
+    height: 100%;
+   }
+
+   .container-ending {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+   }
+ 
+}
+
+@media screen and (min-width: 834px) {
+   header>.me-description {
+    height: 250px;
+    bottom: -100px;
+   }
+}
+
+@media screen and (min-width: 1024px) {
+   header>.me-description {
+    width: 50%;
+    margin: 0 auto;
+    position: absolute;
+    left: 0;
+    right: 0;
+   }
+
+   .me {
+      height: 1000px;
+   }
+
+   .blog-position {
+      align-items: flex-start;
+      justify-content: space-evenly;
+      width: 90%;
+      margin: 0 auto;
+   }
+
+   .contenedor-blog1 {
+      width: 47%;
+      height: 500px;
+   }
+
+   .contenedor-blog2 {
+      width: 47%;
+      height: 500px;
+   }
+
+   .container-ending {
+    padding: 5rem;
+   }
+ 
+}
